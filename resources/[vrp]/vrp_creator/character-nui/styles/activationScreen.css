@@ -1,0 +1,227 @@
+#activationScreen {
+  width: 100vw;
+  height: 100vh;
+
+  background-image: url(../assets/images/background.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#activationScreen .ballons {
+  width: 100%;
+  height: 150%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: absolute;
+  object-fit: cover;
+
+  bottom: -21.875rem;
+}
+
+#activationScreen .ballons img {
+  flex: none;
+
+  height: fit-content;
+
+  animation: float 10s ease-in-out infinite;
+  position: relative;
+}
+
+#activationScreen .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;  
+
+  margin: 0 auto;
+
+  max-width: 980px;
+  height: 100%;
+
+  
+}
+
+#activationScreen .content::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 840px;
+  height: 840px;
+
+  background: url(../assets/images/conffeti.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  opacity: 0;
+  scale: 0;
+
+  animation: conffetiLoop 8s cubic-bezier(0.34, 1.56, 0.64, 1) infinite;
+}
+
+@keyframes conffetiLoop {
+  0% {
+    opacity: 0;
+    scale: 0.2;
+    transform: translate(-50%, -50%) rotate(-15deg);
+  }
+  
+  15% {
+    opacity: 0.8;
+  }
+
+  20% {
+    scale: 1.1;
+  }
+
+  25%, 75% {
+    opacity: 1;
+    scale: 1;
+  }
+
+  45% {
+    transform: translate(-50%, -52%) rotate(-2deg);
+  }
+
+  65% {
+    transform: translate(-50%, -50%) rotate(5deg);
+  }
+
+  85% {
+    opacity: 0.8;
+    scale: 1;
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  100% {
+    opacity: 0;
+    scale: 0.2;
+    transform: translate(-50%, -50%) rotate(-15deg);
+  }
+}
+
+#activationScreen .content main {
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+#activationScreen .content main h1 {
+  color: rgba(255, 255, 255, 0.90);
+  font-family: Sora;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+#activationScreen .content main p {
+  color: #D4D94C;
+  text-align: center;
+  text-shadow: 0px 0px 54px rgba(212, 217, 76, 0.35);
+  font-family: Montserrat;
+  font-size: 90px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: -0.9px;
+}
+
+#activationScreen .content main .vip-initial {
+  display: flex;
+  width: 276px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  flex-shrink: 0;
+
+  border-radius: 2px;
+  background: linear-gradient(270deg, #D3132F 0%, #B10D25 100%);
+  box-shadow: 0px 0px 14px 0px rgba(211, 19, 47, 0.45);
+
+  color: #FFF;
+  font-family: Sora;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+#activationScreen .content main span {
+  color: rgba(255, 255, 255, 0.70);
+  text-align: center;
+  font-family: Sora;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+#activationScreen .content main ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  list-style-type: none;
+}
+
+#activationScreen .content main ul li {
+  color: #FFF;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 0.5;
+  letter-spacing: -0.17px;
+}
+
+#activationScreen .content footer {
+  text-align: center;
+  font-size: .6875rem;
+  text-transform: uppercase;
+
+  color: rgba(221, 221, 221, 0.29);
+
+  margin-bottom: 60px;
+}
+
+#activationScreen .content footer b {
+  color: #fff;
+}
+
+#activationScreen .ballons img:nth-child(1) { animation-delay: 0s; bottom: 1.25rem; }
+#activationScreen .ballons img:nth-child(2) { animation-delay: 2s; bottom: -1.875rem; }
+#activationScreen .ballons img:nth-child(3) { animation-delay: 1s; bottom: 3.125rem; }
+#activationScreen .ballons img:nth-child(4) { animation-delay: 3s; bottom: -0.625rem; }
+#activationScreen .ballons img:nth-child(5) { animation-delay: 4s; bottom: 2.5rem; }
+#activationScreen .ballons img:nth-child(6) { animation-delay: 2.5s; bottom: -2.5rem; }
+#activationScreen .ballons img:nth-child(7) { animation-delay: 1.5s; bottom: 1.875rem; }
+#activationScreen .ballons img:nth-child(8) { animation-delay: 3.5s; bottom: -0.625rem; }
+#activationScreen .ballons img:nth-child(9) { animation-delay: 2s; bottom: 2.5rem; }
+#activationScreen .ballons img:nth-child(10) { animation-delay: 4.5s; bottom: -3.125rem; }
+#activationScreen .ballons img:nth-child(11) { animation-delay: 3s; bottom: 0.625rem; }
+#activationScreen .ballons img:nth-child(12) { animation-delay: 1s; bottom: -1.25rem; }
+#activationScreen .ballons img:nth-child(13) { animation-delay: 2.5s; bottom: 2.5rem; }
+#activationScreen .ballons img:nth-child(14) { animation-delay: 3.5s; bottom: -2.1875rem; }
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-150vh);
+  }
+}

@@ -1,0 +1,5 @@
+{
+    "Lua.diagnostics.enable": false,
+    "Lua.semantic.variable": false,
+    "Lua.workspace.preloadFileSize": 5000
+}

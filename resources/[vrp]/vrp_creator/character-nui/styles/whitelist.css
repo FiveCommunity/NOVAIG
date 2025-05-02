@@ -1,0 +1,508 @@
+#whitelist {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../assets/images/background.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
+
+#whitelist * {
+  box-sizing: border-box;
+}
+
+#whitelist .steps {
+  width: 420px;
+  min-height: 52px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.45) 0%,
+    rgba(0, 0, 0, 0.34) 100%
+  );
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 6px 39px;
+}
+
+#whitelist .steps .line {
+  width: 117px;
+  height: 2px;
+}
+
+#whitelist .steps .line#firstStep {
+  background: linear-gradient(90deg, #84470d 0%, rgba(211, 19, 47, 0) 100%);
+}
+
+#whitelist .steps .step {
+  background: rgb(255, 255, 255, 0.05);
+  color: #9d9d9d;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 32px;
+  height: 36px;
+
+  mask-image: url("../assets/icons/hexagon.svg");
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+
+  text-align: center;
+
+  -webkit-mask-image: url("../assets/icons/hexagon.svg");
+  -webkit-mask-repeat: none;
+  -webkit-mask-position: center;
+  -webkit-mask-size: cover;
+
+  padding: 0;
+
+  text-align: center;
+  leading-trim: both;
+  text-edge: cap;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+#whitelist .steps .step:nth-child(1) {
+  color: #fff;
+  background-color: #84470d;
+}
+
+#whitelist main {
+  width: 26.25rem;
+  min-height: 31rem;
+  flex-shrink: 0;
+  position: relative;
+  padding: 0 0 1.4rem 0;
+
+  border-radius: 0.5rem;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.45) 0%,
+    rgba(0, 0, 0, 0.34) 100%
+  );
+}
+
+#whitelist main > .title {
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+  top: -28px;
+}
+
+#whitelist main section {
+  padding-top: 3.38rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#whitelist main section legend {
+  color: rgba(255, 255, 255, 0.65);
+  text-align: center;
+  leading-trim: both;
+  text-edge: cap;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 123.426%;
+
+  width: 21.4375rem;
+}
+
+#whitelist main section:nth-child(2) article {
+  margin: 0 !important;
+}
+
+#whitelist main section article {
+  display: flex;
+  flex-direction: column;
+  gap: 1.56rem;
+  margin-top: 2.81rem;
+}
+
+#whitelist main section hr {
+  width: 22.25rem;
+  height: 0.0625rem;
+  flex-shrink: 0;
+
+  margin: 1.4rem;
+
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+#whitelist main section .box {
+  width: 22.25rem;
+  min-height: 2.625rem;
+  flex-shrink: 0;
+
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0 0.75rem;
+
+  border-radius: 0.3125rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+#whitelist main section .box .title {
+  display: inline-flex;
+  padding: 0.01rem 0.65rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+
+  border-radius: 0.1875rem;
+  background: #84470d;
+
+  color: #fff;
+  text-align: center;
+  font-size: 0.8125rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+
+  position: absolute;
+  left: 0.5rem;
+  top: -14px;
+}
+
+#whitelist main section .box span {
+  color: #fff !important;
+}
+
+#whitelist main section .box input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+
+  color: #fff;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  width: 100%;
+  line-height: normal;
+}
+
+#whitelist main section article .passport {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+
+  width: 22.25rem;
+  height: 2.875rem;
+  flex-shrink: 0;
+  border-radius: 0.25rem;
+  background: linear-gradient(
+    270deg,
+    rgba(211, 19, 47, 0.2) 0%,
+    rgba(177, 13, 37, 0.2) 100%
+  );
+
+  color: #fff;
+  padding-left: 2rem;
+  text-align: center;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+#whitelist main section .box input::placeholder {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+#whitelist main section .vehicle {
+  width: 22.25rem;
+  height: 6rem;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 0.3125rem;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 0 1.5rem;
+}
+
+#whitelist main section .vehicle.selected {
+  border-radius: 0.3125rem;
+  border: 1px solid #84470d;
+  background: linear-gradient(
+    90deg,
+    rgba(211, 102, 19, 0.35) 0%,
+    rgba(211, 19, 47, 0) 100%
+  );
+  box-shadow: 0px 0px 24.2px 0px rgba(211, 105, 19, 0.25);
+}
+
+#whitelist main section .vehicle .text p {
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 0.4rem;
+  margin: 0;
+}
+
+#whitelist main section .vehicle .text span {
+  color: #fff;
+  font-size: 1.375rem;
+  font-style: normal;
+  font-weight: 600;
+}
+
+#whitelist main section .vehicle img {
+  height: 4.375rem;
+}
+
+#whitelist main section .accent {
+  display: inline-flex;
+  padding: 0.025rem 0.75rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+
+  border-radius: 0.1875rem;
+  background: #84470d;
+
+  color: #fff;
+  text-align: center;
+  font-size: 0.8125rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+#whitelist main section .buttons {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+#whitelist main section .buttons > div {
+  width: 11.125rem;
+  height: 2.375rem;
+  flex-shrink: 0;
+
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.38rem;
+}
+
+#whitelist main section .buttons > div:nth-child(1) {
+  border-radius: 0.3125rem 0rem 0rem 0.3125rem;
+}
+
+#whitelist main section .buttons > div:nth-child(2) {
+  border-radius: 0 0 0.3125rem 0;
+}
+
+#whitelist main section .buttons > div {
+  border-radius: 0.3125rem;
+  background: linear-gradient(
+    90deg,
+    rgba(211, 73, 19, 0.15) 0%,
+    rgba(109, 64, 10, 0.15) 100%
+  );
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #84470d;
+  text-align: center;
+  font-size: 0.9375rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+#whitelist main section .buttons > div svg path {
+  fill: #84470d;
+  stroke: #84470d;
+}
+
+#whitelist main section .buttons > div.selected {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: linear-gradient(90deg, #84470d 0%, #84470d 100%);
+
+  color: #fff;
+  text-align: center;
+  font-size: 0.9375rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+#whitelist main section .buttons > div.selected svg path {
+  fill: #fff;
+  stroke: #fff;
+}
+
+#whitelist button {
+  width: 26.25rem;
+  height: 3.25rem;
+  flex-shrink: 0;
+  border-radius: 0.25rem;
+  background: linear-gradient(
+    270deg,
+    rgba(211, 19, 47, 0.95) 0%,
+    rgba(177, 13, 37, 0.95) 100%
+  );
+  box-shadow: 0px 0px 13.5px 0px rgba(179, 15, 35, 0.35);
+  border: none;
+
+  color: #fff;
+  text-align: center;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+  margin-top: 0.4rem;
+  cursor: pointer;
+}
+
+.notify_list {
+  top: 1.5rem;
+  left: 1.5rem;
+  position: absolute;
+
+  gap: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  font-family: "Baloo 2", sans-serif;
+
+  z-index: 99999;
+}
+
+.notify_list .notify {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.9375rem;
+
+  display: inline-flex;
+  padding: 4px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  overflow: hidden;
+  position: relative;
+  animation: fadeIn 0.3s ease both;
+
+  border-radius: 8px;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.65) 0%,
+    rgba(0, 0, 0, 0.49) 100%
+  );
+}
+
+.notify_list .notify.fadeOut {
+  animation: fadeOut 0.2s ease-in-out both;
+}
+
+.notify_list .notify > svg {
+  width: 1.375rem;
+  height: 1.375rem;
+
+  stroke-width: 0.6px;
+}
+
+.notify_list .notify > div {
+  width: 11.6875rem;
+}
+
+.notify_list .notify > div p {
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 400;
+}
+
+.notify_list .notify.recruitment > div h4 {
+  text-shadow: 0px 0px 11px rgba(103, 205, 0, 0.35);
+  font-size: 0.75rem;
+  font-weight: 600;
+
+  background: linear-gradient(315deg, #67cd00 0%, #69d100 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  margin-bottom: 0.3rem;
+}
+
+.notify_list .notify.recruitment > div small {
+  font-size: 0.7rem;
+  color: gray;
+}
+
+.notify_list .notify .progressContainer {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 0);
+
+  width: 14.125rem;
+  height: 0.125rem;
+
+  border-radius: 0.0625rem 0.0625rem 0rem 0rem;
+  background: rgba(0, 0, 0, 0.24);
+}
+
+.notify_list .notify .progressContainer .progressContent {
+  height: 100%;
+  width: 100%;
+
+  border-radius: 0.0625rem 0.0625rem 0rem 0rem;
+  background: #fff;
+
+  transition: width 0.3s linear;
+  animation: WidthRegress 0.3s linear both;
+}
+
+@keyframes WidthRegress {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
+  }
+}

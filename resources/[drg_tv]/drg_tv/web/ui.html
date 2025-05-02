@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle Remoto Moderno</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	
+    <div class="remote-container">
+        <!-- Botão de Ligar -->
+        <button class="power-button animate-glow" onclick="turnOffTV()">
+            <i class="fa-solid fa-power-off"></i>
+        </button>
+
+        <!-- Sistema de Navegação Circular -->
+        <div class="navigation-wrapper">
+            <div class="navigation-circle">
+                <button class="arrow up"><i class="fa-solid fa-caret-up"></i></button>
+                <button class="arrow left"><i class="fa-solid fa-caret-left"></i></button>
+                <button class="center-play" onclick="playVideo()">
+                    <i class="fa-solid fa-play"></i>
+                </button>
+                <button class="arrow right"><i class="fa-solid fa-caret-right"></i></button>
+                <button class="arrow down"><i class="fa-solid fa-caret-down"></i></button>
+            </div>
+        </div>
+
+        <!-- Controle de Volume -->
+        <div class="volume-wrapper">
+            <div class="volume-control">
+                <button class="volume-button volume-up" onclick="volumeChange('increase')">+</button>
+                <span class="label">VOL</span>
+                <button class="volume-button volume-down" onclick="volumeChange('decrease')">-</button>
+            </div>
+        </div>
+
+        <!-- Campo de URL -->
+        <div class="input-container">
+            <input id="videoinputtvdata" class="videoinput glowing-effect" placeholder="Digite a URL do vídeo" type="text">
+        </div>
+
+        <!-- LED Indicador -->
+        <div class="led-indicator"></div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+[
+    {
+        "dist": 5.0,
+        "hash": 741314661,
+        "perm": "perm.hospicio",
+        "z": 104.6085433959961,
+        "y": 1102.3656005859376,
+        "text": true,
+        "isGate": false,
+        "x": 1307.36865234375,
+        "lock": true
+    },
+    {
+        "dist": 10.0,
+        "hash": 725274945,
+        "perm": "perm.cassino",
+        "z": 78.24652862548828,
+        "y": -88.11934661865235,
+        "text": true,
+        "isGate": false,
+        "x": 876.6420288085938,
+        "lock": true
+    },
+    {
+        "dist": 5.0,
+        "hash": 725274945,
+        "perm": "perm.cassiono",
+        "z": 77.86091613769531,
+        "y": 87.82447814941406,
+        "text": true,
+        "isGate": false,
+        "x": 931.1834716796876,
+        "lock": true
+    },
+    {
+        "dist": 5.0,
+        "hash": 725274945,
+        "perm": "perm.cassino",
+        "z": 77.61344146728516,
+        "y": 25.5147533416748,
+        "text": true,
+        "isGate": false,
+        "x": 877.5130004882813,
+        "lock": true
+    },
+    {
+        "dist": 5.0,
+        "hash": 725274945,
+        "perm": "perm.grota",
+        "z": 68.05538177490235,
+        "y": -285.4030456542969,
+        "text": true,
+        "isGate": false,
+        "x": 1218.22509765625,
+        "lock": true
+    },
+    {
+        "dist": 5.0,
+        "hash": 741314661,
+        "text": true,
+        "z": 73.47781372070313,
+        "y": -138.0651397705078,
+        "lock": true,
+        "perm": "perm.motoclube",
+        "x": 956.91552734375,
+        "isGate": false
+    }
+]

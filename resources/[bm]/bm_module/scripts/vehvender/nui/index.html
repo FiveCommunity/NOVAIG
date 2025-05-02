@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veh Vender</title>
+    <link rel="stylesheet" href="vehvender/nui/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;800;900&family=Montserrat:wght@100;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <div id="container_vehvender">
+        <img src="vehvender/nui/images/key.svg" alt="" class="key_veh">
+        <div class="content_top_veh">
+            <div class="text_top_veh">
+                <h1>TRANSFERIR VEICULO</h1>
+                <p>TRANSFERIR SEU VEICULO PARA OUTRA PESSOA</p>
+            </div>
+            <!--  -->
+            <!-- aq vai ficar a parada q lista os carros -->
+            <!--  -->
+            <div class="cars_veh">
+                <div class="outside_cars_veh " onclick="openModal('sell')">
+                    <div class="name_car name_car_sell">NENHUM</div>
+                    <img src="vehvender/nui/images/arrow.svg" alt="">
+                </div>
+                <div class="result_cars_veh result_cars_sell">
+                    <div class="item_cars_veh">
+                        PANTO
+                    </div>
+                    <div class="item_cars_veh">
+                        PANTO
+                    </div>
+                    <div class="item_cars_veh">
+                        PANTO
+                    </div>
+                    <div class="item_cars_veh">
+                        PANTO
+                    </div>
+                </div>
+            </div>
+            <input type="text" class="id_veh id_veh_sell" placeholder="ID">
+            <input type="text" class="value_veh value_veh_sell" placeholder="VALOR">
+            <button class="sell_veh" onclick="sellVehicle('sell')">VENDER</button>
+        </div>
+        <div class="content_top_veh content_bottom_veh">
+            <div class="text_top_veh">
+                <h1>DAR CHAVES</h1>
+                <p>DAR AS CHAVES PARA MAIS PESSOAS</p>
+            </div>
+            <!--  -->
+            <!-- aq vai ficar a parada q lista os carros -->
+            <!--  -->
+            <div class="cars_veh">
+                <div class="outside_cars_veh" onclick="openModal('key')">
+                    <div class="name_car name_car_key">NENHUM</div>
+                    <img src="vehvender/nui/images/arrow.svg" alt="">
+                </div>
+                <div class="result_cars_veh result_cars_key">
+                    <div class="item_cars_veh">
+                        PANTO
+                    </div>
+                    <div class="item_cars_veh">
+                        PANTO
+                    </div>
+                    <div class="item_cars_veh">
+                        PANTO
+                    </div>
+                    <div class="item_cars_veh">
+                        PANTO
+                    </div>
+                </div>
+            </div>
+            <input type="text" class="id_veh id_key_veh " placeholder="ID">
+            <div class="buttons_veh">
+                <button class="sell_veh" onclick="sellVehicle('keyAdd')">ADICIONAR</button>
+                <button class="sell_veh" onclick="sellVehicle('keyRem')">REMOVER</button>
+            </div>
+        </div>
+    </div>
+    <script src="vehvender/nui/script.js"></script>
+</body>
+
+</html>

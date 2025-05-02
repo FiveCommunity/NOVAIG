@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "@ngrok/ngrok": "^1.4.1",
+    "axios": "^1.7.9",
+    "express": "^4.21.2"
+  }
+}

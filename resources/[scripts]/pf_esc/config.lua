@@ -1,0 +1,42 @@
+config = {
+    vipGroups = {
+        'Inicial',
+        'Bronze',
+        'Prata',
+        'Ouro',
+        'Platina',
+        'Diamante',
+        'Safira',
+        'Esmeralda',
+        'Rubi',
+        'RubiPlus',
+        'Altarj',
+        'VipSaoJoao',
+        'VipCrianca',
+        'VipSetembro',
+        "VipNatal",
+        "Vip2025",
+        "VipAnoNovo",
+        "VipCarnaval",
+        'VipBlackfriday',
+        'VipInicial',
+        'Supremobela',
+    },
+    package = {
+        title = 'PACK PORSCHE',
+        description = 'PFISTER 911R - PFISTER TAYCAN21 - PFISTER MACAN-T',
+        price = 6800,
+        items = {
+            { spawn = '911r', name = 'PFISTER 911R', price = 2260 },
+            { spawn = 'taycan21', name = 'PFISTER TAYCAN21', price = 2260 },
+            { spawn = 'macanturbo', name = 'PFISTER MACAN-T', price = 2260 },
+        }
+    },
+    stores = {
+        { spawn = '350z', name = '350Z', price = 800},
+        { spawn = 'wrrelampagomarquinhos', name = 'Mini Relampago Marquinhos', price = 1200},
+        { spawn = '23teslapf', name = 'COIL PF', price = 2000},
+        { spawn = '22g63', name = 'G63', price = 2000},
+        { spawn = 'd99', name = 'DUCATTI 99R', price = 2000},
+    },
+}

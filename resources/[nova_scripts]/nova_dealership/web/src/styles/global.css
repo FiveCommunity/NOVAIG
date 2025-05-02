@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  user-select: none;
+  font-family: 'Baloo 2', sans-serif;
+  outline: none !important;
+}
+
+html {
+  font-size: .75vw;
+}
+
+@media screen and (min-width: 2540px) {
+  html {
+    font-size: 0.6vw !important;
+  }
+}
+
+body,
+#root {
+  height: 100vh;
+  overflow: hidden;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+::-webkit-scrollbar {
+  width: 0.275rem;
+  border-radius: 0.125rem;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 0.125rem;
+  background: #1E90F3;
+}
+
+.buy {
+  border-radius: 0.125rem;
+  border: 1px solid #39e87f;
+  background: linear-gradient(270deg, #129e4a 0%, #2cb563 100%);
+  box-shadow: 0px 0px 13.5px 0px rgba(57, 232, 127, 0.35);
+}
+
+.item {
+  border-radius: 0.125rem;
+  border: 0.8px solid rgba(221, 221, 221, 0.15);
+  background: radial-gradient(
+    71.05% 71.05% at 50% 50%,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(221, 221, 221, 0) 100%
+  );
+}
+
+
+.muted-foreground {
+  border-radius: 0.125rem;
+  border: 0.8px solid rgba(221, 221, 221, 0.15);
+  background: radial-gradient(
+    71.05% 71.05% at 50% 50%,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(221, 221, 221, 0) 100%
+  );
+}
+
+.accent {
+  border-radius: 0.125rem !important;
+  border: 1px solid #1E90F3 !important;
+  background: linear-gradient(
+      135deg,
+      rgb(30, 144, 243, .9) 0%,
+      rgb(30, 144, 243, .36) 100%
+    ),
+    rgba(0, 0, 0, 0.9) !important;
+  box-shadow: 0px 0px 14px 0px rgb(30, 144, 243, .45) !important;
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+@keyframes progress {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+html {
+  font-size: 0.75vw;
+}

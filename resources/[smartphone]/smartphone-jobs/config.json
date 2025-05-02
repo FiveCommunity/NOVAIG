@@ -1,0 +1,178 @@
+{
+  "locale": "pt-BR",
+  "currency": "BRL",
+  "uber": {
+    "pricing": {
+      "base": 250,
+      "per_km": 375
+    },
+    "common_places": [
+      { "name": "Praça", "location": [156.9, -1012.25, 29.4] },
+      { "name": "Hospital", "location": [1156.9, -1514.04, 34.7] },
+      { "name": "Departamento Policial", "location": [-906.92, -2046.05, 9.3] }
+    ],
+    "cancelable": 0
+  },
+  "food": {
+    "categories": [
+      { "id": 1, "name": "Restaurantes" },
+      { "id": 2, "name": "Bebidas" },
+      { "id": 3, "name": "Farmácias" }
+    ],
+    "stores": [
+      {
+        "id": 1,
+        "name": "7-Eleven",
+        "icon": "https://3.bp.blogspot.com/-4kHgwblA0GM/W1ZRcumBkpI/AAAAAAABrlU/oSQabdv0rnMf31ROQ67DPdiV6WOzx2TeACLcBGAs/s1600/seven%2Blogo.jpg",
+        "category_id": 1,
+        "price": 2,
+        "fee": 50,
+        "location": [1135.85,-983.85,45.42],
+        "products": [
+          {
+            "id": 1,
+            "name": "Tacos",
+            "description": "",
+            "price": 10,
+            "section": "Lanches",
+            "image": "https://cdn.jesteriruka.dev/cactus/items/tacos.png",
+            "items": {
+              "tacos": 1
+            }
+          },
+          {
+            "id": 2,
+            "name": "Hambúrguer",
+            "description": "",
+            "price": 10,
+            "section": "Lanches",
+            "image": "https://cdn.jesteriruka.dev/cactus/items/hamburger.png",
+            "items": {
+              "hamburger": 1
+            }
+          },
+          {
+            "id": 3,
+            "name": "Cachorro-Quente",
+            "description": "",
+            "price": 10,
+            "section": "Lanches",
+            "image": "https://cdn.jesteriruka.dev/cactus/items/hotdog.png",
+            "items": {
+              "hotdog": 1
+            }
+          },
+          {
+            "id": 4,
+            "name": "Sanduíche",
+            "description": "",
+            "price": 10,
+            "section": "Lanches",
+            "image": "https://cdn.jesteriruka.dev/cactus/items/sandwich.png",
+            "items": {
+              "sandwich": 1
+            }
+          },
+          {
+            "id": 5,
+            "name": "Batata Frita",
+            "description": "",
+            "price": 10,
+            "section": "Lanches",
+            "image": "https://cdn.jesteriruka.dev/cactus/items/fries.png",
+            "items": {
+              "fries": 1
+            }
+          },
+          {
+            "id": 101,
+            "name": "Chocolate",
+            "description": "",
+            "price": 10,
+            "section": "Doces",
+            "image": "https://cdn.jesteriruka.dev/cactus/items/chocolate.png",
+            "items": {
+              "chocolate": 1
+            }
+          },
+          {
+            "id": 102,
+            "name": "Donut",
+            "description": "",
+            "price": 10,
+            "section": "Doces",
+            "image": "https://cdn.jesteriruka.dev/cactus/items/donut.png",
+            "items": {
+              "donut": 1
+            }
+          },
+          {
+            "id": 201,
+            "name": "Água",
+            "description": "",
+            "price": 40,
+            "section": "Bebidas",
+            "image": "https://cdn.jesteriruka.dev/cactus/items/water.png",
+            "items": {
+              "water": 1
+            }
+          },
+          {
+            "id": 202,
+            "name": "Refrigerante",
+            "description": "",
+            "price": 35,
+            "section": "Bebidas",
+            "image": "https://cdn.jesteriruka.dev/cactus/items/drink.png",
+            "items": {
+              "drink": 1
+            }
+          },
+          {
+            "id": 203,
+            "name": "Suco",
+            "description": "",
+            "price": 35,
+            "section": "Bebidas",
+            "image": "https://cdn.jesteriruka.dev/cactus/items/juice.png",
+            "items": {
+              "juice": 1
+            }
+          },
+          {
+            "id": 204,
+            "name": "Café",
+            "description": "",
+            "price": 65,
+            "section": "Bebidas",
+            "image": "https://cdn.jesteriruka.dev/cactus/items/coffee.png",
+            "items": {
+              "coffee": 1
+            }
+          },
+          {
+            "id": 205,
+            "name": "Energético",
+            "description": "",
+            "price": 165,
+            "section": "Bebidas",
+            "image": "https://cdn.jesteriruka.dev/cactus/items/energetic.png",
+            "items": {
+              "energetic": 1
+            }
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "7-Eleven",
+        "icon": "https://3.bp.blogspot.com/-4kHgwblA0GM/W1ZRcumBkpI/AAAAAAABrlU/oSQabdv0rnMf31ROQ67DPdiV6WOzx2TeACLcBGAs/s1600/seven%2Blogo.jpg",
+        "category_id": 1,
+        "price": 2,
+        "fee": 50,
+        "location": [29.95, -1345.58, 29.5],
+        "products": { "ref": 1 }
+      }
+    ]
+  }
+}

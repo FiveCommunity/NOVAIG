@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./styles/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"referrerpolicy="no-referrer"></script>
+    
+    <title>pdr#8400</title>
+  </head>
+
+  <body>
+    <div id="app">
+      <input type="number" placeholder="DIGITE SUA FREQUÊNCIA..." id="RadioChannel">
+      <div class="volume">
+        <input type="range" name="volume" value="1.0" id="volume" min="0.0" max="1.0" step="0.1" oninput="changeVolume(this, event)">
+        <img src="./assets/volume.svg" alt="Volume">
+      </div>
+      <div class="buttons">
+        <button onclick="disconnect()">DESCONECTAR</button>
+        <button onclick="connect()">CONECTAR</button>
+      </div>
+    </div>
+    <div class="users"></div>
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>

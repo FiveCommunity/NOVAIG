@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#app {
+  top: 50%;
+  right: 35px;
+  transform: translate(0, -50%);
+  position: absolute;
+
+  width: 292px;
+  height: 165px;
+  background: radial-gradient(
+    85.25% 203.7% at 50% 178.7%,
+    rgba(211, 19, 47, 0.85) 0%,
+    rgba(26, 26, 26, 0.85) 100%
+  );
+  border: 0.478723px solid rgba(211, 19, 47);
+
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#app input[type="number"] {
+  width: 262px;
+  height: 24px;
+  border: 0.478723px solid rgba(211, 19, 47);
+  background-color: transparent;
+
+  padding: 0 8px;
+  color: white;
+
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 0.02em;
+  outline: none;
+}
+
+#app input[type="text"]::placeholder {
+  color: rgba(211, 19, 47, 0.5);
+}
+
+#app .volume {
+  gap: 6px;
+  display: flex;
+  align-items: center;
+  margin: 26px 0;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none; 
+  width: 240px;
+  cursor: pointer;
+  outline: none;
+  border-radius: 15px;
+  height: 6px;
+  background: linear-gradient(to right, rgba(211, 19, 47) 100%, rgba(211, 19, 47) 100%);
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none; 
+  height: 15px;
+  width: 15px;
+  background: rgba(211, 19, 47);
+  border-radius: 50%;
+  border: none;
+  transition: .2s ease-in-out;
+}
+
+#app .buttons {
+  gap: 12px;
+  display: flex;
+  align-items: center;
+}
+
+#app .buttons button {
+  width: 127.66px;
+  height: 23.94px;
+  border: 0.478723px solid rgba(211, 19, 47);
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  color: white;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+#app .buttons button:first-child {
+  background-color: transparent;
+}
+
+#app .buttons button:first-child:hover {
+  color: white;
+  background: rgba(211, 19, 47, 0.85);
+}
+
+#app .buttons button:last-child {
+  color: white;
+  background: rgba(211, 19, 47, 0.85);
+}
+
+#app .buttons button:last-child:hover {
+  color: white;
+  background: transparent;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

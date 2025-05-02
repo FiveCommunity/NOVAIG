@@ -1,0 +1,48 @@
+{
+    "noHelpMessage": "VOCÊ FEZ SEU CHAMADO AGUARDE SER ATENDIDO",
+    "afterCallMessage": "NÃO TEM PESSOAS SUFICIENTE NO MOMENTO VÁ ATÉ NOSSO DISCORD",
+    "permissions": [
+        {
+            "label": "Desenvolvedor",
+            "hasPermission": true,
+            "selected": false,
+            "value": "developerlotusgroup@445"
+        },
+        {
+            "label": "Moderador",
+            "hasPermission": false,
+            "selected": false,
+            "value": "moderadorlotusgroup@445"
+        },
+        {
+            "label": "Resplog",
+            "hasPermission": false,
+            "selected": false,
+            "value": "resploglotusgroup@445"
+        },
+        {
+            "label": "Respeventos",
+            "hasPermission": false,
+            "selected": false,
+            "value": "respeventoslotusgroup@445"
+        },
+        {
+            "label": "Suporte",
+            "hasPermission": false,
+            "selected": false,
+            "value": "suportelotusgroup@445"
+        },
+        {
+            "label": "Admin",
+            "hasPermission": false,
+            "selected": false,
+            "value": "adminlotusgroup@445"
+        },
+        {
+            "label": "TOP1",
+            "hasPermission": true,
+            "selected": false,
+            "value": "TOP1"
+        }
+    ]
+}

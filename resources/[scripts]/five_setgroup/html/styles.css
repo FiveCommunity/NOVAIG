@@ -1,0 +1,1065 @@
+/* Reset e configurações básicas */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  user-select: none;
+  /* background-color: #121212; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-image: linear-gradient(
+    45deg,
+    #0a0a0a 25%,
+    #121212 25%,
+    #121212 50%,
+    #0a0a0a 50%,
+    #0a0a0a 75%,
+    #121212 75%,
+    #121212 100%
+  );
+  background-size: 40px 40px; */
+}
+
+body {
+  display: none;
+  animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Variáveis de cores do v0.dev */
+:root {
+  --background: #000000;
+  --foreground: #ffffff;
+  --card: #0c0c0c;
+  --card-foreground: #ffffff;
+  --popover: #0c0c0c;
+  --popover-foreground: #ffffff;
+  --primary: #ffffff;
+  --primary-foreground: #000000;
+  --secondary: #1a1a1a;
+  --secondary-foreground: #ffffff;
+  --muted: #262626;
+  --muted-foreground: #a3a3a3;
+  --accent: #1a1a1a;
+  --accent-foreground: #ffffff;
+  --destructive: #7f1d1d;
+  --destructive-foreground: #ffffff;
+  --border: #262626;
+  --input: #262626;
+  --ring: #ffffff;
+  --radius: 0.5rem;
+  --highlight: #00ff66;
+  --highlight-dark: #00cc52;
+  --highlight-alpha: rgba(0, 255, 102, 0.15);
+
+  /* Sombras */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.2);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.4);
+  --shadow-highlight: 0 0 15px rgba(0, 255, 102, 0.3);
+
+  /* Espaçamentos */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+
+  /* Transições */
+  --transition-fast: 0.15s ease;
+  --transition-normal: 0.25s ease;
+  --transition-slow: 0.4s ease;
+}
+
+/* Container do tablet */
+.tablet-container {
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  padding: 20px;
+}
+
+/* Tablet Frame */
+.tablet-frame {
+  width: 95vw;
+  height: 70vh;
+  max-width: 1200px;
+  background: linear-gradient(145deg, #1a1a1a, #0f0f0f);
+  border-radius: 36px;
+  position: relative;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5), 0 0 0 2px rgba(50, 50, 50, 0.2), inset 0 0 10px rgba(0, 0, 0, 0.5);
+  border: 14px solid #222;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transform: rotateX(2deg);
+  transition: transform 0.5s ease;
+}
+
+.tablet-frame:hover {
+  transform: rotateX(0deg);
+}
+
+/* Elementos físicos do tablet */
+.tablet-camera {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: radial-gradient(circle at center, #333, #111);
+  border-radius: 50%;
+  top: 14px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  box-shadow: inset 0 0 2px #000, 0 0 0 1px rgba(255, 255, 255, 0.05);
+}
+
+.tablet-speaker {
+  position: absolute;
+  width: 60px;
+  height: 4px;
+  background-color: #222;
+  border-radius: 4px;
+  top: 14px;
+  left: calc(50% + 20px);
+  transform: translateX(-50%);
+  z-index: 10;
+  box-shadow: inset 0 0 2px #000;
+}
+
+.tablet-button-power {
+  position: absolute;
+  width: 5px;
+  height: 40px;
+  background: linear-gradient(to right, #222, #333);
+  border-radius: 3px;
+  top: 100px;
+  right: -14px;
+  transform: translateY(-50%);
+  z-index: 10;
+  box-shadow: inset 0 0 2px #000;
+}
+
+.tablet-button-volume-up {
+  position: absolute;
+  width: 5px;
+  height: 30px;
+  background: linear-gradient(to right, #222, #333);
+  border-radius: 3px;
+  top: 160px;
+  right: -14px;
+  transform: translateY(-50%);
+  z-index: 10;
+  box-shadow: inset 0 0 2px #000;
+}
+
+.tablet-button-volume-down {
+  position: absolute;
+  width: 5px;
+  height: 30px;
+  background: linear-gradient(to right, #222, #333);
+  border-radius: 3px;
+  top: 200px;
+  right: -14px;
+  transform: translateY(-50%);
+  z-index: 10;
+  box-shadow: inset 0 0 2px #000;
+}
+
+/* Tela do tablet */
+.tablet-screen {
+  flex: 1;
+  background-color: var(--background);
+  border-radius: 22px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.8);
+  position: relative;
+}
+
+/* Reflexo na tela */
+.tablet-screen::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), transparent);
+  z-index: 5;
+  pointer-events: none;
+}
+
+/* Barra de status */
+.status-bar {
+  height: 36px;
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 var(--space-4);
+  color: var(--foreground);
+  font-size: 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  position: relative;
+  z-index: 10;
+}
+
+.status-bar-left,
+.status-bar-right {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.status-bar i {
+  font-size: 14px;
+}
+
+.time {
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+/* Container do aplicativo */
+.app-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background);
+  overflow: hidden;
+  position: relative;
+}
+
+/* Cabeçalho do aplicativo */
+.app-header {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(10, 10, 10, 0.9));
+  padding: var(--space-4) var(--space-5);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--border);
+  height: 80px;
+  position: relative;
+}
+
+/* Efeito de vidro no cabeçalho */
+.app-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.05), transparent);
+  pointer-events: none;
+}
+
+.app-title {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  position: relative;
+  z-index: 2;
+}
+
+.app-logo {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #052e16, #064e3b);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-highlight), 0 0 0 1px rgba(0, 255, 102, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Efeito de brilho no logo */
+.app-logo::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at center, rgba(0, 255, 102, 0.2), transparent 70%);
+  animation: rotate 10s linear infinite;
+  pointer-events: none;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.app-logo i {
+  color: var(--highlight);
+  font-size: 22px;
+  filter: drop-shadow(0 0 5px var(--highlight-alpha));
+  position: relative;
+  z-index: 2;
+}
+
+.app-title h1 {
+  color: var(--foreground);
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.close-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--destructive);
+  border: none;
+  color: var(--destructive-foreground);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  box-shadow: var(--shadow-sm), 0 0 0 1px rgba(255, 255, 255, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Efeito de brilho no botão fechar */
+.close-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s ease;
+}
+
+.close-btn:hover::before {
+  left: 100%;
+}
+
+.close-btn:hover {
+  background-color: #b91c1c;
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: var(--shadow-md), 0 0 10px rgba(127, 29, 29, 0.5);
+}
+
+.close-btn i {
+  font-size: 18px;
+  position: relative;
+  z-index: 2;
+}
+
+/* Barra de informações do player */
+.player-info-bar {
+  background-color: var(--card);
+  padding: var(--space-4) var(--space-5);
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  border-bottom: 1px solid var(--border);
+  position: relative;
+}
+
+/* Efeito de vidro na barra de informações */
+.player-info-bar::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.02), transparent);
+  pointer-events: none;
+}
+
+.player-avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: linear-gradient(to bottom right, var(--secondary), #0f0f0f);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--border);
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05), 0 2px 4px rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 2;
+}
+
+.player-avatar i {
+  color: var(--muted-foreground);
+  font-size: 20px;
+}
+
+.player-details {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 2;
+}
+
+.player-label {
+  color: var(--muted-foreground);
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.player-id {
+  /* color: var(--foreground); */
+  font-size: 1px;
+  font-weight: 1;
+  letter-spacing: -0.3px;
+}
+
+/* Conteúdo principal */
+.app-content {
+  flex: 1;
+  display: flex;
+  padding: var(--space-5);
+  gap: var(--space-5);
+  overflow: hidden;
+  background-color: var(--background);
+  position: relative;
+}
+
+/* Efeito de grade no fundo */
+.app-content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+  background-size: 20px 20px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.panel-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--card);
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-md), 0 0 0 1px rgba(255, 255, 255, 0.03);
+  transition: all var(--transition-normal);
+  position: relative;
+  z-index: 1;
+}
+
+.panel-section:hover {
+  box-shadow: var(--shadow-lg), 0 0 20px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.05);
+  transform: translateY(-2px);
+}
+
+.panel-header {
+  background: linear-gradient(to right, var(--card), var(--secondary));
+  padding: var(--space-4);
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  border-bottom: 1px solid var(--border);
+  position: relative;
+}
+
+/* Efeito de brilho no cabeçalho do painel */
+.panel-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.1), transparent);
+  pointer-events: none;
+}
+
+.panel-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #052e16, #064e3b);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 10px rgba(0, 255, 102, 0.2), 0 0 0 1px rgba(0, 255, 102, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Efeito de brilho no ícone do painel */
+.panel-icon::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at center, rgba(0, 255, 102, 0.2), transparent 70%);
+  animation: rotate 8s linear infinite;
+  pointer-events: none;
+}
+
+.panel-icon i {
+  color: var(--highlight);
+  font-size: 16px;
+  position: relative;
+  z-index: 2;
+}
+
+.panel-header h2 {
+  color: var(--foreground);
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: -0.3px;
+  position: relative;
+  z-index: 2;
+}
+
+/* Campo de pesquisa */
+.search-container {
+  position: relative;
+  padding: var(--space-3);
+  background-color: var(--card);
+  border-bottom: 1px solid var(--border);
+}
+
+.search-container i {
+  position: absolute;
+  left: 22px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--muted-foreground);
+  font-size: 14px;
+}
+
+#groupSearch {
+  width: 100%;
+  padding: var(--space-3) var(--space-3) var(--space-3) 35px;
+  background-color: var(--secondary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  color: var(--foreground);
+  font-size: 14px;
+  transition: all var(--transition-fast);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+#groupSearch:focus {
+  outline: none;
+  border-color: var(--highlight);
+  box-shadow: 0 0 0 2px var(--highlight-alpha), inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Conteúdo dos painéis */
+.panel-content {
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+/* Grids e listas */
+.groups-grid {
+  flex: 1;
+  overflow-y: auto;
+  padding: var(--space-3);
+  display: grid;
+  grid-template-columns: repeat(3, minmax(120px, 1fr)); /* Colunas com tamanho mínimo */
+  gap: var(--space-3);
+  background-color: var(--card);
+  position: relative;
+}
+
+.player-groups-list {
+  flex: 1;
+  overflow-y: auto;
+  padding: var(--space-3);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  background-color: var(--card);
+  position: relative;
+}
+
+/* Itens de grupo */
+.grupo,
+.player {
+  padding: var(--space-3);
+  border-radius: var(--radius);
+  text-align: center;
+  cursor: pointer;
+  transition: all var(--transition-normal);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-sm), 0 0 0 1px rgba(255, 255, 255, 0.03);
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  height: 40px;
+  width: 100%; /* Garante que ocupe toda a largura disponível na célula do grid */
+  min-width: 120px; /* Largura mínima */
+  max-width: 100%; /* Impede que ultrapasse o contêiner pai */
+  position: relative;
+  overflow: hidden;
+}
+
+/* Adicionar um span dentro dos elementos para controlar melhor o texto */
+.grupo span,
+.player span {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+/* Efeito de brilho nos itens */
+.grupo::before,
+.player::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.1), transparent);
+  transition: left 0.5s ease;
+}
+
+.grupo:hover::before,
+.player:hover::before {
+  left: 100%;
+}
+
+/* Adicionar tamanho fixo para os itens de grupo */
+.grupo {
+  background: linear-gradient(to bottom, var(--secondary), #141414);
+  color: var(--secondary-foreground);
+  border-left: 3px solid var(--muted);
+}
+
+.player {
+  background: linear-gradient(to bottom, #052e16, #041f10);
+  color: #ecfdf5;
+  border-left: 3px solid var(--highlight);
+}
+
+.grupo:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: var(--shadow-md), 0 0 10px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(to bottom, #262626, #1a1a1a);
+}
+
+.player:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: var(--shadow-md), 0 0 10px var(--highlight-alpha);
+  background: linear-gradient(to bottom, #064e3b, #052e16);
+}
+
+/* Rodapé do aplicativo */
+.app-footer {
+  padding: var(--space-4);
+  background-color: var(--card);
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid var(--border);
+  position: relative;
+}
+
+/* Efeito de vidro no rodapé */
+.app-footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.02), transparent);
+  pointer-events: none;
+}
+
+.action-button {
+  padding: var(--space-3) var(--space-6);
+  border-radius: var(--radius);
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  transition: all var(--transition-normal);
+  letter-spacing: 0.5px;
+  height: 52px;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.save-button {
+  background: linear-gradient(to bottom, #064e3b, #052e16);
+  color: white;
+  border: 1px solid var(--highlight-dark);
+  box-shadow: var(--shadow-md), 0 0 10px var(--highlight-alpha), 0 0 0 1px rgba(0, 255, 102, 0.2);
+  min-width: 200px;
+  position: relative;
+}
+
+/* Efeito de brilho no botão salvar */
+.save-button::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at center, rgba(0, 255, 102, 0.2), transparent 70%);
+  animation: rotate 10s linear infinite;
+  pointer-events: none;
+}
+
+.save-button:hover {
+  background: linear-gradient(to bottom, #065f46, #064e3b);
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: var(--shadow-lg), 0 0 20px var(--highlight-alpha), 0 0 0 1px rgba(0, 255, 102, 0.3);
+}
+
+.save-button i {
+  color: var(--highlight);
+  font-size: 18px;
+  filter: drop-shadow(0 0 5px var(--highlight-alpha));
+  position: relative;
+  z-index: 2;
+}
+
+/* Modal de confirmação */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.modal-content {
+  position: relative;
+  background-color: var(--card);
+  border-radius: var(--radius);
+  width: 90%;
+  max-width: 400px;
+  box-shadow: var(--shadow-lg), 0 0 30px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.05);
+  overflow: hidden;
+  animation: modalAppear 0.3s var(--transition-normal);
+  border: 1px solid var(--border);
+  z-index: 1001;
+}
+
+@keyframes modalAppear {
+  from {
+    opacity: 0;
+    transform: translateY(-20px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.modal-header {
+  background: linear-gradient(to right, var(--card), var(--secondary));
+  padding: var(--space-4);
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  border-bottom: 1px solid var(--border);
+  position: relative;
+}
+
+/* Efeito de brilho no cabeçalho do modal */
+.modal-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.1), transparent);
+  pointer-events: none;
+}
+
+.modal-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: rgba(245, 158, 11, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(245, 158, 11, 0.2);
+  box-shadow: 0 0 15px rgba(245, 158, 11, 0.2);
+}
+
+.modal-icon i {
+  color: #f59e0b;
+  font-size: 20px;
+  filter: drop-shadow(0 0 3px rgba(245, 158, 11, 0.3));
+}
+
+.modal-header h3 {
+  color: var(--foreground);
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: -0.3px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.modal-body {
+  padding: var(--space-5);
+  color: var(--foreground);
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.modal-footer {
+  padding: var(--space-4);
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--space-3);
+  border-top: 1px solid var(--border);
+  background-color: var(--card);
+}
+
+.modal-btn {
+  padding: var(--space-2) var(--space-4);
+  border-radius: var(--radius);
+  font-weight: 500;
+  cursor: pointer;
+  transition: all var(--transition-normal);
+  border: none;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  height: 44px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Efeito de brilho nos botões do modal */
+.modal-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.1), transparent);
+  transition: left 0.5s ease;
+}
+
+.modal-btn:hover::before {
+  left: 100%;
+}
+
+.cancel-btn {
+  background-color: var(--secondary);
+  color: var(--secondary-foreground);
+  border: 1px solid var(--border);
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05);
+}
+
+.cancel-btn:hover {
+  background-color: var(--accent);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md), 0 0 0 1px rgba(255, 255, 255, 0.1);
+}
+
+.confirm-btn {
+  background: linear-gradient(to bottom, #064e3b, #052e16);
+  color: white;
+  border: 1px solid var(--highlight-dark);
+  box-shadow: 0 0 5px var(--highlight-alpha);
+}
+
+.confirm-btn:hover {
+  background: linear-gradient(to bottom, #065f46, #064e3b);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md), 0 0 10px var(--highlight-alpha);
+}
+
+.confirm-btn i {
+  color: var(--highlight);
+  filter: drop-shadow(0 0 3px var(--highlight-alpha));
+}
+
+/* Scrollbar personalizada */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--card);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--muted);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .tablet-frame {
+    width: 95vw;
+    height: 90vh;
+    border-width: 10px;
+    border-radius: 24px;
+  }
+
+  .tablet-screen {
+    border-radius: 14px;
+  }
+
+  .app-content {
+    flex-direction: column;
+  }
+
+  .groups-grid {
+    grid-template-columns: repeat(2, minmax(120px, 1fr));
+  }
+}
+
+/* Animação para os itens */
+.grupo,
+.player {
+  animation: itemAppear 0.3s ease-out;
+}
+
+@keyframes itemAppear {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Efeito de brilho nos elementos destacados */
+.app-logo i,
+.panel-icon i,
+.save-button i {
+  animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    filter: drop-shadow(0 0 2px var(--highlight-alpha));
+  }
+  to {
+    filter: drop-shadow(0 0 8px var(--highlight-alpha));
+  }
+}
+
+/* Efeito de ripple para botões */
+.action-button,
+.modal-btn,
+.grupo,
+.player {
+  position: relative;
+  overflow: hidden;
+}
+
+.ripple {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  transform: scale(0);
+  animation: ripple 0.6s linear;
+  pointer-events: none;
+}
+
+@keyframes ripple {
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+
+/* Classe para efeito de transição */
+.transferring {
+  opacity: 0.5;
+  transform: scale(0.8);
+  transition: all 0.3s ease;
+}
+

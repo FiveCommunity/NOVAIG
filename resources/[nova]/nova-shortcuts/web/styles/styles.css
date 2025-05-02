@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  box-sizing: border-box;
+  font-family: "Spartan", sans-serif;
+}
+
+html {
+  font-size: .75vw;
+}
+
+body {
+  height: 100vh;
+  display: none;
+  overflow: hidden;
+  background: linear-gradient(90deg, rgba(217, 217, 217, 0.00) 0%, rgba(0, 0, 0, 0.60) 100%);
+}
+
+#app {
+  width: 20rem;
+  height: 33.375rem;
+  flex-shrink: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../assets/images/background.png);
+
+  top: 50%;
+  right: 2.5rem;
+  position: absolute;
+  transform: translateY(-50%);
+}

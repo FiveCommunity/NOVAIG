@@ -1,0 +1,29 @@
+.bombeiro {
+  --color-primary: #D32828;
+  --gradient-primary: linear-gradient(270deg, #D32828 0%, #A11E1E 100%);
+  --gradient-background: linear-gradient(270deg, rgba(211, 40, 40, 0.16) 0%, rgba(161, 30, 30, 0.16) 100%);
+}
+
+.hospital {
+  --color-primary: #D3132F;
+  --gradient-primary: linear-gradient(270deg, #D3132F 0%, #B10D25 100%);
+  --gradient-background: linear-gradient(270deg, rgba(211, 19, 47, 0.16) 0%, rgba(177, 13, 37, 0.16) 100%);
+}
+
+.mecanico {
+  --color-primary: #66A5C5;
+  --gradient-primary: linear-gradient(270deg, #66A5C5 0%, #4B7A91 100%);
+  --gradient-background: linear-gradient(270deg, rgba(102, 165, 197, 0.16) 0%, rgba(75, 122, 145, 0.16) 100%);
+}
+
+.policia {
+  --color-primary: #1A73E8;
+  --gradient-primary: linear-gradient(270deg, #1A73E8 0%, #145AB5 100%);
+  --gradient-background: linear-gradient(270deg, rgba(26, 115, 232, 0.16) 0%, rgba(20, 90, 181, 0.16) 100%);
+}
+
+.advocacia {
+  --color-primary: #4b2612;
+  --gradient-primary: linear-gradient(270deg, #4B2612 0%, #68341D 100%);
+  --gradient-background: linear-gradient(270deg, rgba(75, 38, 18, 0.16) 0%, rgba(104, 52, 29, 0.16) 100%);
+}

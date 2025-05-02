@@ -1,0 +1,92 @@
+{
+    "token": "",
+    "fivecloud":"http://fivecommunity.cloud/Fivenet/",
+    "client": {
+        "apps": {
+            "calculator": "./imagens/calculator.webp",
+            "notes": "./imagens/notes.webp",
+            "settings": "./imagens/settings.webp",
+            "contacts": "./imagens/contacts.webp",
+            "sms": "./imagens/sms.webp",
+            "gallery": "./imagens/gallery.webp",
+            "phone": "./imagens/phone.webp",
+            "facetime": "./imagens/facetime.png",
+            "instagram": { "name": "FiveGram", "icon": "./imagens/instagram.webp" }, 
+            "minesweeper": { "name": "Campo Minado", "icon": "./imagens/mines.webp" },
+            "truco": "./imagens/truco.webp",
+            "yellowpages": { "name": "Five Pages", "icon": "./imagens/pages.webp" },
+            "tinder": { "name": "Tinder", "icon": "./imagens/tinder.webp" },
+            "olx": { "name": "olx", "icon": "./imagens/olx.webp" },
+            "whatsapp": { "name": "Five zap", "icon": "./imagens/wtz.webp" },
+            "tor": { "name": "Deep Web", "icon": "./imagens/dpw.webp" },
+            "bank": { "name": "FiveBank", "icon": "./imagens/fleeca.webp" },
+            "paypal": { "name": "FivePay", "icon": "./imagens/paypal.webp" },
+            "twitter": { "name": "Twitter", "icon": "./imagens/passaro.webp" },
+            "weazel": { "name": "Five News", "icon": "./imagens/news.webp" },
+            "casino": { "name": "Blaze", "icon": "./imagens/blaze.webp" }
+          },
+        "bankType": "fleeca",
+       "uploadServer": "http://fivecommunity.cloud/Fivenet/FiveOS/fivephone/index.php" ,
+        "uploadServer2": "aaaaaaaaaaaaaaa",
+        "allowUnsafeURL": true,
+        "videoServer": "ws://localhost:8080/",
+        "case": "s20",
+        "isAndroid": true,
+        "useGameClock": false,
+        "phone_template": "XXX-XXX",
+       "backgroundURL": "./imagens/wallpaper.png",
+        "disabledApps": [
+            "paypal"
+        ]
+    },
+    "exclusive": {
+        "weazel": {
+            "tags": [
+                "Noticias", "Topics"
+            ],
+            "permission": "Admin"
+        },
+        "casino": {
+            "maxBet": 10000
+        }
+    },
+    "call_mode": "pma-voice",
+    "webhookURL": "https://discord.com/api/webhooks/1313763750280560680/t1nBtFHSs1wZW9vKRQg6ILLGv5oSQosz9PdFkQgY_URsp9QQFwue6-xXeLbDQu2WhOxk",
+    "instagram_verify": [
+        "Admin",
+        "perm.verificado"
+    ],
+    "weazel_tags": "Admin",
+    "instagram_accounts": {
+        "*": 1,
+        "Admin": 2
+    },
+    "moderator": "Admin",
+    "item": "celular",
+    "services": [
+        {
+            "name": "Policia",
+            "number": "190",
+            "permission": "policia.permissao"
+        },
+        {
+            "name": "Paramédico",
+            "number": "192",
+            "permission": "paramedico.permissao"
+        },
+        {
+            "name": "Mecânico",
+            "number": "0800-042",
+            "permission": "mecanico.permissao"
+        },
+        {
+            "name": "Prefeitura",
+            "number": "0800-123",
+            "permission": "Admin"
+        }
+      
+    ],
+    "base": "vrpex",
+    "db_driver": "oxmysql",
+    "channel": "stable"
+}

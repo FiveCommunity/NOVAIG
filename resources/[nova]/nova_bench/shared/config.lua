@@ -1,0 +1,272 @@
+Config = {
+    ImageCdn = "http://177.54.148.31:4020/lotus/inventario_cda/%s.png",
+    Log = "Usuário {user_id} adicionou {amount}x {item} por R${value}",
+    LogExpireDays = 14, -- 0 para desativar (Dias necessários para deletar logs)
+    BlockedItems = {
+        ["money"] = true,
+    },
+    Prices = {
+        ["default"] = 100,
+        ["ouro"] = 200,
+    },
+    Tables = {
+        -- {
+        --     permission = "perm.irlanda",
+        --     name = "Irlanda",
+        --     coords = vector3(-2022.84,-145.89,28.07),
+        --     heading = 0.0
+        -- },
+        -- {
+        --     permission = "perm.sindicato",
+        --     name = "Sindicato",
+        --     coords = vector3(-644.83,-1658.7,25.53),
+        --     heading = 119.89
+        -- },
+        -- {
+        --     permission = "perm.taliba",
+        --     name = "Taliba",
+        --     coords = vector3(-160.03,-2019.15,22.75),
+        --     heading = 280.66
+        -- },
+        -- {
+        --     permission = "perm.elements",
+        --     name = "Elements",
+        --     coords = vector3(-131.97,-1545.36,34.15),
+        --     heading = 0.0
+        -- },
+        -- {
+        --     permission = "perm.elements",
+        --     name = "Elements",
+        --     coords = vector3(757.38,-969.71,25.19),
+        --     heading = 0.0
+        -- },
+        -- {
+        --     permission = "perm.china",
+        --     name = "China",
+        --     coords = vector3(-848.51,-710.91,26.61),
+        --     heading = 0.0
+        -- },
+        -- {
+        --     permission = "perm.israel",
+        --     name = "Israel",
+        --     coords = vector3(-1683.95,479.23,130.4),
+        --     heading = 0.0
+        -- },
+        -- {
+        --     permission = "perm.russia",
+        --     name = "Russia",
+        --     coords = vector3(841.92,235.18,82.97),
+        --     heading = 0.0
+        -- },
+        -- {
+        --     permission = "perm.grecia",
+        --     name = "Grecia",
+        --     coords = vector3(-302.8,-1515.65,28.58),
+        --     heading = 0.0
+        -- },
+        -- {
+        --     permission = "perm.cdd",
+        --     name = "CDD",
+        --     coords = vector3(-1191.01,-1747.41,4.14),
+        --     heading = 0.0
+        -- },
+        -- {
+        --     permission = "perm.hellsangells",
+        --     name = "Hells Angels",
+        --     coords = vector3(998.72,-2477.84,28.58),
+        --     heading = 0.0
+        -- },
+        -- {
+        --     permission = "perm.motoclube",
+        --     name = "Motoclube",
+        --     coords = vector3(951.47,-135.63,74.46),
+        --     heading = 148.85
+        -- },
+        -- {
+        --     permission = "perm.bennys",
+        --     name = "Bennys",
+        --     coords = vector3(-244.76,-1299.98,31.29),
+        --     heading = 0.0
+        -- },
+        -- {
+        --     permission = "perm.cohab",
+        --     name = "Cohab",
+        --     coords = vector3(-1536.92,-388.41,42.78),
+        --     heading = 0.0
+        -- },
+        -- {
+        --     permission = "perm.lacoste",
+        --     name = "Lacoste",
+        --     coords = vector3(769.55,-1051.52,27.06),
+        --     heading = 0.0
+        -- },
+        -- {
+        --     permission = "perm.roxos",
+        --     name = "Roxos",
+        --     coords = vector3(98.38,-1868.29,24.16),
+        --     heading = 0.0
+        -- },
+        -- {
+        --     permission = "perm.colombia",
+        --     name = "Colombia",
+        --     coords = vector3(-850.81,167.31,67.05),
+        --     heading = 0.0
+        -- },
+        -- {
+        --     permission = "perm.mexico",
+        --     name = "Mexico",
+        --     coords = vector3(760.69,-339.19,47.16),
+        --     heading = 0.0
+        -- },
+        -- {
+        --     permission = "perm.okayda",
+        --     name = "Okayda",
+        --     coords = vector3(-3128.65,806.33,17.56),
+        --     heading = 0.0
+        -- },
+        -- {
+        --     permission = "perm.escocia",
+        --     name = "Escocia",
+        --     coords = vector3(1303.47,-2587.51,46.93),
+        --     heading = 0.0
+        -- },
+        -- {
+        --     permission = "perm.korea",
+        --     name = "Korea",
+        --     coords = vector3(-136.91,270.37,95.3),
+        --     heading = 0.0
+        -- },
+        -- {
+        --     permission = "perm.sete",
+        --     name = "Sete",
+        --     coords = vector3(-1135.74,392.06,71.22),
+        --     heading = 0.0
+        -- },
+        -- {
+        --     permission = "perm.bahamas",
+        --     name = "Bahamas",
+        --     coords = vector3(-1386.42,-585.57,30.19),
+        --     heading = 0.0
+        -- },
+        -- {
+        --     permission = "perm.cassino",
+        --     name = "Cassino",
+        --     coords = vector3(868.42,13.4,79.14),
+        --     heading = 0.0
+        -- },
+        -- {
+        --     permission = "perm.lux",
+        --     name = "Lux",
+        --     coords = vector3(-327.99,233.73,86.56),
+        --     heading = 0.0
+        -- },
+        -- {
+        --     permission = "perm.medusa",
+        --     name = "Medusa",
+        --     coords = vector3(759.31,-555.05,32.74),
+        --     heading = 0.0
+        -- },
+        -- {
+        --     permission = "perm.anonymous",
+        --     name = "Anonymous",
+        --     coords = vector3(398.84,-1481.49,29.13),
+        --     heading = 0.0
+        -- },
+        -- {
+        --     permission = "perm.tequila",
+        --     name = "Tequila",
+        --     coords = vector3(-542.69,315.37,83.02),
+        --     heading = 261.29
+        -- },
+        -- {
+        --     permission = "perm.anubis",
+        --     name = "Anubis",
+        --     coords = vector3(-412.12,-19.63,46.71),
+        --     heading = 357.24
+        -- },
+        -- {
+        --     permission = "perm.magnatas",
+        --     name = "Magnatas",
+        --     coords = vector3(-3002.83,113.94,14.59),
+        --     heading = 0.0
+        -- },
+        -- {
+        --     permission = "perm.grota",
+        --     name = "Grota",
+        --     coords = vector3(1191.33,-254.57,69.08),
+        --     heading = 0.0
+        -- },
+        -- {
+        --     permission = "perm.vaticano",
+        --     name = "Vaticano",
+        --     coords = vector3(-1468.62,874.74,183.53),
+        --     heading = 0.0
+        -- },
+        -- {
+        --     permission = "perm.milicia",
+        --     name = "Milicia",
+        --     coords = vector3(-3115.63,1327.09,20.2),
+        --     heading = 0.0
+        -- },
+        -- {
+        --     permission = "perm.cv",
+        --     name = "CV",
+        --     coords = vector3(2946.86,2939.52,90.45),
+        --     heading = 0.0
+        -- },
+        -- {
+        --     permission = "perm.inglaterra",
+        --     name = "Inglaterra",
+        --     coords = vector3(-1467.98,67.4,53.25),
+        --     heading = 0.0
+        -- },
+        -- {
+        --     permission = "perm.hospicio",
+        --     name = "Hospicio",
+        --     coords = vector3(1307.04,1101.8,105.63),
+        --     heading = 0.0
+        -- },
+        -- {
+        --     permission = "perm.franca",
+        --     name = "Franca",
+        --     coords = vector3(1287.06,-724.5,64.62),
+        --     heading = 0.0
+        -- },
+        -- {
+        --     permission = "perm.medellin",
+        --     name = "Medellin",
+        --     coords = vector3(300.65,-2004.76,20.32),
+        --     heading = 0.0
+        -- },
+        -- {
+        --     permission = "perm.psico",
+        --     name = "Psico",
+        --     coords = vector3(-2551.42,1904.85,168.62),
+        --     heading = 0.0
+        -- },
+        -- {
+        --     permission = "perm.abutres",
+        --     name = "Abutres",
+        --     coords = vector3(2495.39,4920.94,41.18),
+        --     heading = 0.0
+        -- },
+        -- {
+        --     permission = "perm.bratva",
+        --     name = "Bratva",
+        --     coords = vector3(-2638.73,1297.15,146.24),
+        --     heading = 0.0
+        -- },
+        -- {
+        --     permission = "perm.corleone",
+        --     name = "Corleone",
+        --     coords = vector3(332.26,28.19,87.32),
+        --     heading = 0.0
+        -- },
+        -- {
+        --     permission = "perm.pcc",
+        --     name = "Pcc",
+        --     coords = vector3(-159.82,1031.35,231.84),
+        --     heading = 343.03
+        -- },
+    }
+}

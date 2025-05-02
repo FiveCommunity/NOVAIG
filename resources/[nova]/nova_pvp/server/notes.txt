@@ -1,0 +1,6 @@
+- Validar pra não pode entrar no teams em andamento [ ok ]
+- Killfeed não está funcionando
+- Comando de sair do teams não está funcionando
+- Ocultar HUD quando entrar e ver as validacoes de InPVp BLA BLABLA
+
+-- Colocar validacoa pra so iniciar partida com 1 jogador em cada time no minimo

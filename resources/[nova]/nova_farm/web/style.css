@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Prompt', sans-serif;
+  transition: 0.3s;
+  user-select: none;
+}
+
+body {
+  height: 100vh;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+::-webkit-scrollbar {
+  width: 0.2rem;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f128;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #E31717;
+  border-radius: 0.25rem;
+}
+
+#app {
+  display: flex;
+  min-width: 31.875rem;
+  padding: 1.25rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.9375rem;
+
+  position: absolute;
+  top: 50%;
+  right: 2rem;
+  transform: translateY(-50%);
+
+  border-radius: 0.4375rem;
+  border: 1px solid #d3132f;
+  background: linear-gradient(
+      235deg,
+      rgba(211, 19, 47, 0.08) 43.18%,
+      rgba(211, 19, 47, 0) 108.06%
+    ),
+    linear-gradient(
+      90deg,
+      rgba(17, 17, 17, 0.9) 0%,
+      rgba(11, 11, 11, 0.85) 100%
+    );
+}
+
+#app header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+#app header .infos {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+#app header .infos .multiplier {
+  width: 1.625rem;
+  height: 1.4375rem;
+  flex-shrink: 0;
+
+  mask-image: url(./assets/hexagon.svg);
+  mask-repeat: no-repeat;
+  mask-position: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #fff;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: Prompt;
+  font-size: 0.6275rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+  background-color: #d3132f;
+}
+
+#app header .actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+#app header .actions img#apply {
+  height: 2rem;
+}
+
+#app header .actions button {
+  display: flex;
+  width: 5rem;
+  height: 1.8125rem;
+  padding: 0.625rem 0.875rem;
+  justify-content: center;
+  cursor: pointer;
+  align-items: center;
+  gap: 0.625rem;
+
+  border-radius: 0.1875rem;
+  border: 0.8px solid rgba(255, 255, 255, 0.1);
+  background: radial-gradient(
+      149.41% 131.65% at -10.68% 1.97%,
+      rgba(255, 255, 255, 0.12) 0%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    linear-gradient(0deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%),
+    rgba(255, 255, 255, 0.06);
+
+  color: rgba(221, 221, 221, 0.9);
+  leading-trim: both;
+  text-edge: cap;
+  font-family: Prompt;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+#app header .actions .coins {
+  width: 5.9375rem;
+  height: 2.8125rem;
+  flex-shrink: 0;
+
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 0.1875rem;
+  border: 0.8px solid rgba(255, 255, 255, 0.1);
+  background: radial-gradient(
+      149.41% 131.65% at -10.68% 1.97%,
+      rgba(255, 255, 255, 0.12) 0%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    linear-gradient(0deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%),
+    rgba(255, 255, 255, 0.06);
+}
+
+#app header .actions .coins img {
+  width: 2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#app header .actions .coins p {
+  position: absolute;
+  right: 0.4rem;
+  top: 0.2rem;
+
+  color: #fff;
+  leading-trim: both;
+  text-edge: cap;
+  font-size: 0.65rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+#app section {
+  display: flex;
+  flex-direction: column;
+  height: 20rem;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-right: 0.2rem;
+  gap: .75rem;
+}
+
+#app section .route {
+  display: flex;
+  flex: none;
+  height: 6.875rem;
+  padding: 0.625rem;
+  width: 29.375rem;
+  position: relative;
+  align-items: flex-start;
+  gap: 0.625rem;
+  flex-shrink: 0;
+  cursor: pointer;
+  align-self: stretch;
+
+  border-radius: 0.3125rem;
+  border: 0.8px solid rgba(255, 255, 255, 0.1);
+  background: radial-gradient(
+      149.41% 131.65% at -10.68% 1.97%,
+      rgba(255, 255, 255, 0.12) 0%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    linear-gradient(0deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%),
+    rgba(255, 255, 255, 0.06);
+}
+
+#app section .route .icon {
+  display: flex;
+  width: 5.625rem;
+  height: 5.625rem;
+  padding: 1.25rem 2.625rem;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 0.25rem;
+  border: 0.8px solid rgba(255, 255, 255, 0.02);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+#app section .route .icon img {
+  max-width: 3.25rem;
+  max-height: 3.25rem;
+}
+
+#app section .route h6 {
+  color: #fff;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: Prompt;
+  font-size: 0.9375rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: -0.0375rem;
+}
+
+#app section .route p {
+  color: rgba(221, 221, 221, 0.5);
+  leading-trim: both;
+  text-edge: cap;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 114.03%;
+}
+
+#app section .route .buttons {
+  position: absolute;
+  bottom: 3px;
+}
+
+#app section .route .buttons img {
+  height: 1.75rem;
+  cursor: pointer;
+  filter: grayscale(1);
+}
+
+#app section .route .buttons img:hover {
+  filter: grayscale(0);
+}
+
+
+#app section .route .buttons img.selected {
+  filter: grayscale(0);
+}
+
+#app section .route .start {
+  width: 2.375rem;
+  position: absolute;
+  right: 10px;
+  top: 2.0625rem;
+  cursor: pointer;
+  height: 2.75rem;
+}

@@ -1,0 +1,319 @@
+.notify {
+  border: none !important;
+
+  --color-primary: #bd5928;
+  background: radial-gradient(
+      292.44% 127.19% at -7.58% 105.36%,
+      rgba(189, 89, 40, 0.24) 0%,
+      rgba(77, 189, 96, 0) 100%
+    ),
+    rgba(0, 0, 0, 0.7);
+}
+
+.notify .title::before {
+  content: "";
+
+  top: 50%;
+  left: 6px;
+
+  width: 20px;
+  height: 20px;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.notify .icon {
+  border-radius: 0.25rem;
+  border: 0.0625rem solid #bd5928;
+  background: linear-gradient(270deg, #bd5928 0%, rgba(189, 89, 40, 0.7) 100%);
+  box-shadow: 0px 0px 13.5px 0px rgba(189, 89, 40, 0.35);
+}
+
+.notify.admin {
+  --color-primary: #b80100;
+  background: linear-gradient(
+      309deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(184, 1, 0, 0.2) 84.53%
+    ),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.64) 100%);
+}
+
+.notify.admin .title {
+  border-radius: 3px;
+  border: 1px solid #b80100;
+  background: linear-gradient(270deg, #b80100 0%, #850100 100%);
+  box-shadow: 0px 0px 13.5px 0px rgba(179, 15, 35, 0.35);
+}
+
+.notify.admin .title::before {
+  background: url(./icons/admin.svg);
+}
+
+.notify.success {
+  --color-primary: #02c82d;
+  background: linear-gradient(
+      309deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(77, 189, 96, 0.2) 84.53%
+    ),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.64) 100%);
+}
+
+.notify.success .title {
+  border-radius: 3px;
+  border: 1px solid #4dbd60;
+  background: linear-gradient(135deg, #4dbd60 0%, #388a46 100%);
+}
+
+.notify.success .title::before {
+  background: url(./icons/success.svg);
+}
+
+.notify.refused {
+  --color-primary: #d3132f;
+
+  background: linear-gradient(
+      309deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(174, 0, 0, 0.2) 84.53%
+    ),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.64) 100%);
+}
+
+.notify.refused .title {
+  border-radius: 3px;
+  border: 1px solid #f92e3e;
+  background: linear-gradient(270deg, #f92e3e 0%, #ad202b 100%);
+  box-shadow: 0px 0px 13.5px 0px rgba(249, 46, 62, 0.35);
+}
+
+.notify.refused .title::before {
+  background: url(./icons/refused.svg);
+}
+
+.notify.important {
+  --color-primary: #ffba08;
+
+  background: linear-gradient(
+      309deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(255, 186, 8, 0.2) 84.53%
+    ),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.64) 100%);
+}
+
+.notify.important .title {
+  border-radius: 3px;
+  border: 1px solid #ffba08;
+  background: linear-gradient(270deg, #ffba08 0%, #cc9506 100%);
+  box-shadow: 0px 0px 13.5px 0px rgba(255, 186, 8, 0.35);
+}
+
+.notify.important .title::before {
+  background: url(./icons/bell.svg);
+}
+
+.announce.police {
+  --color-primary: #2c64bd;
+
+  background: linear-gradient(
+      263deg,
+      rgba(44, 100, 189, 0) 30%,
+      rgba(44, 100, 189, 0.4) 100%
+    ),
+    rgba(0, 0, 0, 0.4);
+}
+
+.notifyTag.police {
+  background: #2c64bd;
+}
+
+.announce.hospital {
+  --color-primary: #ffffff;
+
+  background: linear-gradient(
+      263deg,
+      rgba(198, 198, 198, 0) 0%,
+      rgba(255, 0, 0, 0.4) 100%
+    ),
+    rgba(0, 0, 0, 0.22);
+}
+
+.notifyTag.hospital {
+  background: #ffffff;
+}
+
+.announce.mechanic {
+  --color-primary: #ff4c00;
+
+  background: linear-gradient(
+      263deg,
+      rgba(198, 198, 198, 0) 30%,
+      rgba(255, 76, 0, 0.4) 100%
+    ),
+    rgba(0, 0, 0, 0.4);
+}
+
+.announce.staff {
+  --color-primary: #5900ff;
+
+  background: linear-gradient(
+      263deg,
+      rgba(198, 198, 198, 0) 30%,
+      #5900ff66 100%
+    ),
+    rgba(0, 0, 0, 0.4);
+}
+
+.notifyTag.mechanic {
+  background: #ff4c00;
+}
+
+.announce.kids {
+  --color-primary: #c6c6c6;
+
+  background: linear-gradient(
+      263deg,
+      rgba(255, 243, 201, 0.13) 0%,
+      rgba(241, 203, 66, 0.4) 100%
+    ),
+    rgba(0, 0, 0, 0.22);
+}
+
+.notifyTag.kids {
+  background: #c6c6c6;
+}
+
+.announce.party {
+  --color-primary: #c6c6c6;
+
+  animation: rainbow-bg 3s linear;
+  animation-iteration-count: infinite;
+}
+
+.notifyTag.party {
+  background: #c6c6c6;
+}
+
+.announce.fireman {
+  --color-primary: #d3132f;
+  border-radius: 0.4375rem;
+  background: linear-gradient(
+      235deg,
+      rgba(211, 19, 47, 0.16) 43.18%,
+      rgba(211, 19, 47, 0) 108.06%
+    ),
+    linear-gradient(
+      90deg,
+      rgba(17, 17, 17, 0.7) 0%,
+      rgba(11, 11, 11, 0.66) 100%
+    );
+}
+
+.announce.recruitment {
+  --color-primary: #d3132f;
+  border-radius: 0.3125rem;
+  box-shadow: inset 0 0 0 .05rem rgba(0, 0, 0, 0);
+  background: linear-gradient(
+      167deg,
+      rgba(0, 0, 0, 0) -7.5%,
+      rgba(211, 19, 47, 0.28) 87.87%
+    ),
+    rgba(15, 15, 15, 0.7);
+}
+
+.notifyTag.fireman {
+  background: #d3132f;
+}
+
+.announce.juridico {
+  --color-primary: #d69718;
+  border-radius: 0.4375rem;
+  background: linear-gradient(
+      235deg,
+      rgba(43, 42, 42, 0.774) 43.18%,
+      rgba(58, 58, 58, 0) 108.06%
+    ),
+    linear-gradient(
+      90deg,
+      rgba(17, 17, 17, 0.7) 0%,
+      rgba(11, 11, 11, 0.66) 100%
+    );
+}
+
+.announce.vip {
+  --color-primary: #d69718;
+  border-radius: 0.4375rem;
+  background: linear-gradient(
+      235deg,
+      rgba(214, 151, 24, 0.16) 43.18%,
+      rgba(214, 151, 24, 0) 108.06%
+    ),
+    linear-gradient(
+      90deg,
+      rgba(17, 17, 17, 0.7) 0%,
+      rgba(11, 11, 11, 0.66) 100%
+    );
+}
+
+.notifyTag.vip {
+  background: #d69718;
+}
+
+.gradient {
+  border-radius: 0.0625rem !important;
+  border: 1px solid #b80100 !important;
+  background: linear-gradient(135deg, #b80100 0%, #850100 100%) !important ;
+}
+
+@keyframes rainbow-bg {
+  100%,
+  0% {
+    background-color: rgba(255, 0, 0, 0.4);
+  }
+  8% {
+    background-color: rgba(255, 127, 0, 0.4);
+  }
+  16% {
+    background-color: rgba(255, 255, 0, 0.4);
+  }
+  25% {
+    background-color: rgba(127, 255, 0, 0.4);
+  }
+  33% {
+    background-color: rgba(0, 255, 0, 0.4);
+  }
+  41% {
+    background-color: rgba(0, 255, 127, 0.4);
+  }
+  50% {
+    background-color: rgba(0, 255, 255, 0.4);
+  }
+  58% {
+    background-color: rgba(0, 127, 255, 0.4);
+  }
+  66% {
+    background-color: rgba(0, 0, 255, 0.4);
+  }
+  75% {
+    background-color: rgba(127, 0, 255, 0.4);
+  }
+  83% {
+    background-color: rgba(255, 0, 255, 0.4);
+  }
+  91% {
+    background-color: rgba(255, 0, 127, 0.4);
+  }
+}
+
+.logo {
+  height: 6.5rem;
+  margin-top: -1rem;
+}
+
+.cupom {
+  height: 7rem;
+}

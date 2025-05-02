@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CWeaponModelInfo__InitDataList>
+	<InitDatas>
+		<!-- G36 MK2 -->
+		<Item>
+		  <modelName>w_ar_specialcarbinemk2_halloween</modelName>
+		  <txdName>w_ar_specialcarbinemk2_halloween</txdName>
+		  <ptfxAssetName>null</ptfxAssetName>
+		  <lodDist value="50"/>
+		</Item>
+		<Item>
+		  <modelName>w_ar_specialcarbinemk2_halloween_mag1</modelName>
+		  <txdName>w_ar_specialcarbinemk2_halloween_mag1</txdName>
+		  <ptfxAssetName>null</ptfxAssetName>
+		  <lodDist value="50"/>
+		</Item>
+		<Item>
+		  <modelName>w_ar_specialcarbinemk2_halloween_mag2</modelName>
+		  <txdName>w_ar_specialcarbinemk2_halloween_mag2</txdName>
+		  <ptfxAssetName>null</ptfxAssetName>
+		  <lodDist value="50"/>
+		</Item>
+		<Item>
+		  <modelName>w_ar_specialcarbinemk2_ice</modelName>
+		  <txdName>w_ar_specialcarbinemk2_ice</txdName>
+		  <ptfxAssetName>null</ptfxAssetName>
+		  <lodDist value="50"/>
+		</Item>
+		<Item>
+		  <modelName>w_ar_specialcarbinemk2_ice_mag1</modelName>
+		  <txdName>w_ar_specialcarbinemk2_ice_mag1</txdName>
+		  <ptfxAssetName>null</ptfxAssetName>
+		  <lodDist value="50"/>
+		</Item>
+		<Item>
+		  <modelName>w_ar_specialcarbinemk2_ice_mag2</modelName>
+		  <txdName>w_ar_specialcarbinemk2_ice_mag2</txdName>
+		  <ptfxAssetName>null</ptfxAssetName>
+		  <lodDist value="50"/>
+		</Item>
+		<Item>
+		  <modelName>w_ar_specialcarbinemk2_sakura</modelName>
+		  <txdName>w_ar_specialcarbinemk2_sakura</txdName>
+		  <ptfxAssetName>null</ptfxAssetName>
+		  <lodDist value="50"/>
+		</Item>
+		<Item>
+		  <modelName>w_ar_specialcarbinemk2_sakura_mag1</modelName>
+		  <txdName>w_ar_specialcarbinemk2_sakura_mag1</txdName>
+		  <ptfxAssetName>null</ptfxAssetName>
+		  <lodDist value="50"/>
+		</Item>
+		<Item>
+		  <modelName>w_ar_specialcarbinemk2_sakura_mag2</modelName>
+		  <txdName>w_ar_specialcarbinemk2_sakura_mag2</txdName>
+		  <ptfxAssetName>null</ptfxAssetName>
+		  <lodDist value="50"/>
+		</Item>
+
+		<!-- AK MK2 -->
+		<Item>
+		  <modelName>w_ar_assaultriflemk2_golden</modelName>
+		  <txdName>w_ar_assaultriflemk2_golden</txdName>
+		  <ptfxAssetName>null</ptfxAssetName>
+		  <lodDist value="50"/>
+		</Item>
+		<Item>
+		  <modelName>w_ar_assaultriflemk2_golden_mag1</modelName>
+		  <txdName>w_ar_assaultriflemk2_golden_mag1</txdName>
+		  <ptfxAssetName>null</ptfxAssetName>
+		  <lodDist value="50"/>
+		</Item>
+		<Item>
+		  <modelName>w_ar_assaultriflemk2_golden_mag2</modelName>
+		  <txdName>w_ar_assaultriflemk2_golden_mag2</txdName>
+		  <ptfxAssetName>null</ptfxAssetName>
+		  <lodDist value="50"/>
+		</Item>
+		<Item>
+		  <modelName>w_ar_assaultriflemk2_hero</modelName>
+		  <txdName>w_ar_assaultriflemk2_hero</txdName>
+		  <ptfxAssetName>null</ptfxAssetName>
+		  <lodDist value="50"/>
+		</Item>
+		<Item>
+		  <modelName>w_ar_assaultriflemk2_hero_mag1</modelName>
+		  <txdName>w_ar_assaultriflemk2_hero_mag1</txdName>
+		  <ptfxAssetName>null</ptfxAssetName>
+		  <lodDist value="50"/>
+		</Item>
+		<Item>
+		  <modelName>w_ar_assaultriflemk2_hero_mag2</modelName>
+		  <txdName>w_ar_assaultriflemk2_hero_mag2</txdName>
+		  <ptfxAssetName>null</ptfxAssetName>
+		  <lodDist value="50"/>
+		</Item>
+
+		<!-- FIVE SEVEN -->	
+		<Item>
+		  <modelName>w_pi_pistolmk2_halloween</modelName>
+		  <txdName>w_pi_pistolmk2_halloween</txdName>
+		  <ptfxAssetName>null</ptfxAssetName>
+		  <lodDist value="50"/>
+		</Item>
+		<Item>
+		  <modelName>w_pi_pistolmk2_halloween_mag1</modelName>
+		  <txdName>w_pi_pistolmk2_halloween_mag1</txdName>
+		  <ptfxAssetName>null</ptfxAssetName>
+		  <lodDist value="50"/>
+		</Item>
+		<Item>
+		  <modelName>w_pi_pistolmk2_halloween_mag2</modelName>
+		  <txdName>w_pi_pistolmk2_halloween_mag2</txdName>
+		  <ptfxAssetName>null</ptfxAssetName>
+		  <lodDist value="50"/>
+		</Item>
+		<Item>
+		  <modelName>w_pi_pistolmk2_naruto</modelName>
+		  <txdName>w_pi_pistolmk2_naruto</txdName>
+		  <ptfxAssetName>null</ptfxAssetName>
+		  <lodDist value="50"/>
+		</Item>
+		<Item>
+		  <modelName>w_pi_pistolmk2_naruto_mag1</modelName>
+		  <txdName>w_pi_pistolmk2_naruto_mag1</txdName>
+		  <ptfxAssetName>null</ptfxAssetName>
+		  <lodDist value="50"/>
+		</Item>
+		<Item>
+		  <modelName>w_pi_pistolmk2_naruto_mag2</modelName>
+		  <txdName>w_pi_pistolmk2_naruto_mag2</txdName>
+		  <ptfxAssetName>null</ptfxAssetName>
+		  <lodDist value="50"/>
+		</Item>
+		<Item>
+		  <modelName>w_pi_pistolmk2_sakura</modelName>
+		  <txdName>w_pi_pistolmk2_sakura</txdName>
+		  <ptfxAssetName>null</ptfxAssetName>
+		  <lodDist value="50"/>
+		</Item>
+		<Item>
+		  <modelName>w_pi_pistolmk2_sakura_mag1</modelName>
+		  <txdName>w_pi_pistolmk2_sakura_mag1</txdName>
+		  <ptfxAssetName>null</ptfxAssetName>
+		  <lodDist value="50"/>
+		</Item>
+		<Item>
+		  <modelName>w_pi_pistolmk2_sakura_mag2</modelName>
+		  <txdName>w_pi_pistolmk2_sakura_mag2</txdName>
+		  <ptfxAssetName>null</ptfxAssetName>
+		  <lodDist value="50"/>
+		</Item>
+
+		<!-- COMBAT PISTOL -->
+		<Item>
+		  <modelName>w_pi_combatpistol_hero</modelName>
+		  <txdName>w_pi_combatpistol_hero</txdName>
+		  <ptfxAssetName>null</ptfxAssetName>
+		  <lodDist value="50"/>
+		</Item>
+		<Item>
+		  <modelName>w_pi_combatpistol_hero_mag1</modelName>
+		  <txdName>w_pi_combatpistol_hero_mag1</txdName>
+		  <ptfxAssetName>null</ptfxAssetName>
+		  <lodDist value="50"/>
+		</Item>
+		<Item>
+		  <modelName>w_pi_combatpistol_hero_mag2</modelName>
+		  <txdName>w_pi_combatpistol_hero_mag2</txdName>
+		  <ptfxAssetName>null</ptfxAssetName>
+		  <lodDist value="50"/>
+		</Item>
+		<Item>
+		  <modelName>w_pi_combatpistol_sakura</modelName>
+		  <txdName>w_pi_combatpistol_sakura</txdName>
+		  <ptfxAssetName>null</ptfxAssetName>
+		  <lodDist value="50"/>
+		</Item>
+		<Item>
+		  <modelName>w_pi_combatpistol_sakura_mag1</modelName>
+		  <txdName>w_pi_combatpistol_sakura_mag1</txdName>
+		  <ptfxAssetName>null</ptfxAssetName>
+		  <lodDist value="50"/>
+		</Item>
+		<Item>
+		  <modelName>w_pi_combatpistol_sakura_mag2</modelName>
+		  <txdName>w_pi_combatpistol_sakura_mag2</txdName>
+		  <ptfxAssetName>null</ptfxAssetName>
+		  <lodDist value="50"/>
+		</Item>
+
+		<!-- SMG MK2 -->
+		<Item>
+		  <modelName>w_sb_smgmk2_halloween</modelName>
+		  <txdName>w_sb_smgmk2_halloween</txdName>
+		  <ptfxAssetName>null</ptfxAssetName>
+		  <lodDist value="50"/>
+		</Item>
+		<Item>
+		  <modelName>w_sb_smgmk2_halloween_mag1</modelName>
+		  <txdName>w_sb_smgmk2_halloween_mag1</txdName>
+		  <ptfxAssetName>null</ptfxAssetName>
+		  <lodDist value="50"/>
+		</Item>
+		<Item>
+		  <modelName>w_sb_smgmk2_halloween_mag2</modelName>
+		  <txdName>w_sb_smgmk2_halloween_mag2</txdName>
+		  <ptfxAssetName>null</ptfxAssetName>
+		  <lodDist value="50"/>
+		</Item>
+		<Item>
+		  <modelName>w_sb_smgmk2_sakura</modelName>
+		  <txdName>w_sb_smgmk2_sakura</txdName>
+		  <ptfxAssetName>null</ptfxAssetName>
+		  <lodDist value="50"/>
+		</Item>
+		<Item>
+		  <modelName>w_sb_smgmk2_sakura_mag1</modelName>
+		  <txdName>w_sb_smgmk2_sakura_mag1</txdName>
+		  <ptfxAssetName>null</ptfxAssetName>
+		  <lodDist value="50"/>
+		</Item>
+		<Item>
+		  <modelName>w_sb_smgmk2_sakura_mag2</modelName>
+		  <txdName>w_sb_smgmk2_sakura_mag2</txdName>
+		  <ptfxAssetName>null</ptfxAssetName>
+		  <lodDist value="50"/>
+		</Item>
+
+		<!-- COMBAT PDW -->
+		<Item>
+		  <modelName>w_sb_pdw_hero</modelName>
+		  <txdName>w_sb_pdw_hero</txdName>
+		  <ptfxAssetName>null</ptfxAssetName>
+		  <lodDist value="50"/>
+		</Item>
+		<Item>
+		  <modelName>w_sb_pdw_hero_mag1</modelName>
+		  <txdName>w_sb_pdw_hero_mag1</txdName>
+		  <ptfxAssetName>null</ptfxAssetName>
+		  <lodDist value="50"/>
+		</Item>
+		<Item>
+		  <modelName>w_sb_pdw_hero_mag2</modelName>
+		  <txdName>w_sb_pdw_hero_mag2</txdName>
+		  <ptfxAssetName>null</ptfxAssetName>
+		  <lodDist value="50"/>
+		</Item>
+
+		<!-- Dagger -->
+		<Item>
+		  <modelName>w_me_dagger_hero</modelName>
+		  <txdName>w_me_dagger_hero</txdName>
+		  <ptfxAssetName>null</ptfxAssetName>
+		  <lodDist value="50"/>
+		</Item>
+
+		<!-- Hatchet -->
+		<Item>
+		  <modelName>w_me_hatchet_assis</modelName>
+		  <txdName>w_me_hatchet_assis</txdName>
+		  <ptfxAssetName>null</ptfxAssetName>
+		  <lodDist value="50"/>
+		</Item>
+		<Item>
+		  <modelName>w_me_hatchet_halloween</modelName>
+		  <txdName>w_me_hatchet_halloween</txdName>
+		  <ptfxAssetName>null</ptfxAssetName>
+		  <lodDist value="50"/>
+		</Item>
+
+		<!-- Knife -->
+		<Item>
+		  <modelName>w_me_knife_01_hero</modelName>
+		  <txdName>w_me_knife_01_hero</txdName>
+		  <ptfxAssetName>null</ptfxAssetName>
+		  <lodDist value="50"/>
+		</Item>
+	</InitDatas>
+</CWeaponModelInfo__InitDataList>

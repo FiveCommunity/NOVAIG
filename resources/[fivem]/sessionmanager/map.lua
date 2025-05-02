@@ -1,0 +1,2 @@
+spawnpoint 'mp_m_freemode_01' { x = math.random(0.0, 999.00), y = math.random(0.0, 999.00), z = 0.0 }
+spawnpoint 'mp_f_freemode_01' { x = math.random(0.0, 999.00), y = math.random(0.0, 999.00), z = 0.0 }

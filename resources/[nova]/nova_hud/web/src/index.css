@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  transition: all 0.3s ease;
+}
+
+@layer base {
+  body {
+    overflow: hidden;
+  }
+  @keyframes degress {
+    from {
+      width: 100%;
+    }
+    to {
+      width: 0%;
+    } 
+  }
+
+  @keyframes h-progress {
+    from {
+      height: 0%;
+    }
+    to {
+      height: 100%;
+    }
+  }
+}

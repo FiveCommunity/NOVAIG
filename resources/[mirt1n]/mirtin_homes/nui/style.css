@@ -1,0 +1,416 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+	font-family: Poppins, sans-serif;
+    overflow: hidden;
+    user-select: none;
+}
+
+.container {
+    display: none;
+    position: absolute;
+    margin-top: 1%;
+    left: 2%;
+    width: 600px;
+    height: 650px;
+}
+
+header {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 100px;
+}
+
+header img {
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    margin-top: 2%;
+    margin-left: 5%
+}
+
+header .title {
+    position: relative;
+    width: 450px;
+    height: 35px;
+    margin-top: 1%;
+    padding: 5px;
+    padding-left: 10px;
+    border-radius: .3rem;
+    left: 15%;
+    top: 22%;
+    text-align: center;
+}
+
+.title span {
+    color: #dddddd;
+    font-size: 30px;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+    height: 650px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+footer span {
+    position: relative;
+    margin: 5%;
+    top: 7%;
+    color:#a2a4a6;
+    margin-top: 10%;
+    font-size: 12px;
+}
+
+.container-garagem {
+    position: absolute;
+    top: 2%;
+    left: 10px;
+    width: 580px;
+    max-height: 500px;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+.item {
+    width: 100%;
+    height: 110px;
+    padding: 10px;
+}
+
+.item .imagem {
+    height: 90px;
+    width: 160px;
+    display: inline-flex;
+    background-size: cover;
+}
+
+.item:hover {
+    border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.botao {
+    text-transform: uppercase;
+    color: #fff;
+    background-color: rgba(27, 27, 27, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    width: 100%;
+    height: 40px;
+}
+
+.spawn {
+    position: absolute;
+    margin-top: 90%;
+}
+
+.botao:hover {
+    border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.return {
+    position: absolute;
+    margin-top: 100%;
+}
+
+#nome {
+    position: relative;
+    top: -80%;
+    margin-left: 3%;
+    color: #fbfbfb;
+    font-size: 17px;
+}
+
+#types {
+    position: relative;
+    margin-left: 32%;
+    top: 3%;
+    font-size: 11px;
+    color: #fbfbfb;
+}
+
+#types2 {
+    position: relative;
+    margin-left: 32%;
+    top: -3%;
+    font-size: 11px;
+    color: #fbfbfb;
+}
+ 
+#color {
+    font-size: 12px;
+    color:#fbfbfb;
+    float: left;
+    padding: 5px;
+    width: 100%;
+    margin-top: -1px;
+}
+
+#color:hover #hold{
+    color: #fff !important;
+}
+
+#hold {
+    color: transparent !important;
+}
+
+#subtitle {
+    position: relative;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #ccc;
+    white-space: nowrap;
+    top: 15px;
+    left: -5px;
+}
+
+#br1 {
+    border-top-left-radius: .3rem;
+    border-bottom-left-radius: .3rem;
+}
+
+#br2 {
+    border-top-right-radius: .3rem;
+    border-bottom-right-radius: .3rem;
+    border-right: 0 !important;
+    padding-right: 10px;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    height: 5px;
+}
+    
+::-webkit-scrollbar-track {
+    background-color:transparent ;
+}
+    
+::-webkit-scrollbar-thumb {
+    background: #fff; 
+    border-radius: 5px;
+}
+
+/* 
+    NUI DO GUARDA ROUPAS
+*/
+.homeClothe {
+    display: none;
+    width: 380px;
+    height: 528px;
+    margin: 10% 2%;
+    background-color: rgba(0, 0, 0, 0.20);
+    font-family: "Open Sans", sans-serif;
+  }
+  
+  .homeClothe .clotheRight {
+    position: relative;
+    width: 380px;
+    height: 100%;
+    float: right;
+    color: #ffffff;
+    bottom: 19%;
+  }
+  
+  .clotheTitle {
+    position: relative;
+    width: 380px;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.6);
+    top: -20%;
+    text-align: center;
+  }
+  
+  .clotheTitle span {
+    position: relative;
+    bottom: 18%;
+    color: #fff;
+    font-size: 30px;
+  }
+  
+  .clotheTitle img {
+    position: relative;
+    top: 10%;
+    right: 5%;
+    width: 80px;
+  }
+  
+  .containerClothe {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: auto;
+    overflow-x: hidden;
+    padding-right: 20px;
+  }
+  
+  .homeClothe .clotheRight .clotheItem {
+    position: relative;
+    margin: 3%;
+    width: 95%;
+    height: 10%;
+    left: 8px;
+    margin-bottom: 1%;
+    display: inline-flex;
+    background-color: rgba(0, 0, 0, 0.20);
+  }
+  
+  .homeClothe .clotheRight .clotheItem span {
+    margin: 3%;
+    margin-left: 5%;
+    white-space: nowrap;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .homeClothe .clotheRight .clotheItem i {
+    margin: 3%;
+    margin-left: 5%;
+    height: 100%;
+    font-size: 20px;
+  }
+  
+  .homeClothe .clotheRight .button {
+    position: relative;
+    width: 100%;
+    height: 6.5%;
+    margin-top: 2%;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: rgba(27, 27, 27, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .homeClothe .clotheRight .clotheItem:hover {
+    border: 1px solid rgba(255, 255, 255, 0.4);
+  }
+  
+  .homeClothe .clotheRight .button:hover {
+    border: 1px solid rgba(255, 255, 255, 0.4);
+  }
+  
+  hr {
+    height: 1px;
+    background-color: rgba(122, 122, 122, 0.9);
+  }
+  
+  ::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+/* 
+    NUI MORADORES
+*/
+.homeMoradores {
+    display: none;
+    width: 380px;
+    height: 528px;
+    margin: 10% 2%;
+    background-color: rgba(0, 0, 0, 0.20);
+    font-family: "Open Sans", sans-serif;
+  }
+  
+  .homeMoradores .moradoresRight {
+    position: relative;
+    width: 380px;
+    height: 100%;
+    float: right;
+    color: #ffffff;
+    bottom: 19%;
+  }
+  
+  .moradoresTitle {
+    position: relative;
+    width: 380px;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.6);
+    top: -20%;
+    text-align: center;
+  }
+  
+  .moradoresTitle span {
+    position: relative;
+    bottom: 18%;
+    color: #fff;
+    font-size: 30px;
+  }
+  
+  .moradoresTitle img {
+    position: relative;
+    top: 10%;
+    right: 5%;
+    width: 80px;
+  }
+  
+  .containerMoradores {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: auto;
+    overflow-x: hidden;
+    padding-right: 20px;
+  }
+  
+  .homeMoradores .moradoresRight .moradoresItem {
+    position: relative;
+    margin: 3%;
+    width: 95%;
+    height: 10%;
+    left: 8px;
+    margin-bottom: 1%;
+    display: inline-flex;
+    background-color: rgba(0, 0, 0, 0.20);
+  }
+  
+  .homeMoradores .moradoresRight .moradoresItem span {
+    margin: 3%;
+    margin-left: 5%;
+    white-space: nowrap;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .homeMoradores .moradoresRight .moradoresItem i {
+    margin: 3%;
+    margin-left: 5%;
+    height: 100%;
+    font-size: 20px;
+  }
+  
+  .homeMoradores .moradoresRight .buttonMorador {
+    position: relative;
+    width: 100%;
+    height: 6.5%;
+    margin-top: 2%;
+    top: 8%;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: rgba(27, 27, 27, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .homeMoradores .moradoresRight .moradoresItem:hover {
+    border: 1px solid rgba(255, 255, 255, 0.4);
+  }
+  
+  .homeMoradores .moradoresRight .buttonMorador:hover {
+    border: 1px solid rgba(255, 255, 255, 0.4);
+  }
+  
+  hr {
+    height: 1px;
+    background-color: rgba(122, 122, 122, 0.9);
+  }
+  
+  ::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }

@@ -1,0 +1,29 @@
+{
+    "ffa": [
+        null,
+        {
+            "owner_id": 18,
+            "players": {
+                "current": 1,
+                "max": 15
+            },
+            "weapon": "Rifle Avançado",
+            "image": "http://177.54.148.31:4020/lotus/pvp_mapas/treatro.png",
+            "mode": "ffa",
+            "name": "han",
+            "map": "treatro",
+            "private": false,
+            "password": "",
+            "currentPlayers": {
+                "18": {
+                    "deaths": 0,
+                    "kills": 0,
+                    "source": 2350
+                }
+            },
+            "kills": 15,
+            "id": 2,
+            "rounds": 15
+        }
+    ]
+}

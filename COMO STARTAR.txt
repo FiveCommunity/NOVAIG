@@ -1,0 +1,27 @@
+===========================================================================================================
+                                  BASE NOVA IGUAÇU
+===========================================================================================================
+
+1 - COLOQUE SUA KEY NO ARQUIVO "config.cfg" QUE FICA LOCALIZADO NA PASTA CONFIG
+
+2 - COLOQUE O BANCO DE DADOS
+
+3 - COLOQUE OS ARTEFATOS NA PASTA "build"
+
+4 - SÓ STARTAR A BASE PELO ARQUIVO "start.bat"
+
+
+COMO PEGAR PODER DE ADM NA BASE?
+
+QUANDO ESTIVER DENTRO DA CIDADE: USE NO CONSOLE SETDEV [ID] TOP1
+
+============================================================================================================
+
+PARA MAIS INFORMAÇÕES: https://discord.gg/fivecommunity
+PARA MAIS INFORMAÇÕES: https://discord.gg/fivecommunity
+PARA MAIS INFORMAÇÕES: https://discord.gg/fivecommunity
+PARA MAIS INFORMAÇÕES: https://discord.gg/fivecommunity
+PARA MAIS INFORMAÇÕES: https://discord.gg/fivecommunity
+PARA MAIS INFORMAÇÕES: https://discord.gg/fivecommunity
+PARA MAIS INFORMAÇÕES: https://discord.gg/fivecommunity
+

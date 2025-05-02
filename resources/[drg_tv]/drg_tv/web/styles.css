@@ -1,0 +1,201 @@
+:root {
+    --bg-dark: #1e1e1e;
+    --button-dark: #2a2a2a;
+    --button-light: #444;
+    --text-color: #fff;
+    --highlight: #ff4444;
+    --led-color: #ff0000;
+}
+
+body {
+	display: none; 
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+/* Estrutura do Controle */
+.remote-container {
+    position: fixed;
+    top: 50%;
+    right: 20px; /* Mantém o controle no lado direito */
+    transform: translateY(-50%); /* Alinha verticalmente no centro */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--bg-dark);
+
+    padding: 40px;
+    border-radius: 35px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.7);
+    width: 350px;
+    height: 620px;
+    border: 2px solid #333;
+    transition: all 0.3s ease-in-out;
+}
+
+
+/* Botão de Energia */
+.power-button {
+    background-color: var(--highlight);
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    box-shadow: 0 0px 15px rgba(255, 0, 0, 0.6);
+    animation: glow 2s infinite alternate;
+	transition: transform 0.2s;
+}
+
+
+.power-button:hover {
+    transform: scale(1.1);
+}
+
+/* LED Indicador */
+.led-indicator {
+
+    width: 12px;
+    height: 12px;
+    background-color: var(--led-color);
+    border-radius: 50%;
+    position: absolute;
+    bottom: 15px;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.8);
+    animation: led-blink 1.5s infinite alternate;
+}
+
+/* Sistema de Navegação Circular */
+.navigation-wrapper {
+    margin-top: 50px;
+}
+
+.navigation-circle {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    background-color: var(--button-dark);
+    position: relative;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.6);
+    padding: 10px;
+}
+
+/* Botões dentro do círculo de navegação */
+.arrow {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 18px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background 0.2s;
+    border: none; /* Removendo a borda branca */
+}
+
+/* .arrow:hover {
+    background-color: var(--highlight);
+    color: black;
+} */
+
+.arrow.up { top: 10px; left: 50%; transform: translateX(-50%); }
+.arrow.down { bottom: 10px; left: 50%; transform: translateX(-50%); }
+.arrow.left { left: 10px; top: 50%; transform: translateY(-50%); }
+.arrow.right { right: 10px; top: 50%; transform: translateY(-50%); }
+
+/* Botão Central PLAY */
+.center-play {
+    position: absolute;
+    background-color: var(--highlight);
+    border: none;
+    color: white;
+    font-size: 24px;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	transition: transform 0.2s;
+}
+
+.center-play:hover {
+    transform: scale(1.1);
+}
+
+/* Controle de Volume corrigido */
+.volume-wrapper {
+    margin-top: 40px;
+}
+
+
+.volume-control {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--button-dark);
+    padding: 10px;
+    border-radius: 12px;
+    width: 130px;
+    height: 45px;
+    justify-content: space-around;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.1);
+}
+
+.volume-button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 18px;
+    padding: 8px;
+	border-radius: 100vw;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.volume-button:hover {
+    background-color: #ff2222;
+
+}
+
+
+.label {
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Campo de URL */
+.input-container {
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.videoinput {
+    width: 85%;
+    padding: 12px;
+    border-radius: 12px;
+    background-color: var(--button-dark);
+    color: white;
+    font-size: 16px;
+    text-align: center;
+}

@@ -1,0 +1,217 @@
+* {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  box-sizing: border-box;
+  font-family: 'Baloo 2', serif;
+}
+
+body {
+  display: none;
+}
+
+#app {
+  top: 50%;
+  right: 2.5rem;
+  position: absolute;
+  transform: translateY(-50%);
+  flex-shrink: 0;
+}
+
+#app .head {
+  display: flex;
+  width: 21.875rem;
+  height: 3.125rem;
+  padding: 0.5625rem 0.625rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  flex-shrink: 0;
+
+  border-radius: 0.1875rem;
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.9) 0%,
+    rgba(0, 0, 0, 0.67) 100%
+  );
+  margin-bottom: .6rem;
+}
+
+#app .head p {
+  color: #fff;
+  font-family: 'Baloo 2';
+  font-size: 1.0625rem;
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: normal;
+}
+
+#app .head img {
+  width: 3.75rem;
+  height: 3.75rem;
+
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+#app .content {
+  gap: 0.44rem;
+  display: flex;
+  padding: 0.62rem;
+  flex-direction: column;
+  position: relative;
+
+  border-radius: 0.1875rem;
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.9) 0%,
+    rgba(0, 0, 0, 0.67) 100%
+  );
+}
+
+#app .content .user {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%)	;
+}
+
+#app .content .user img {
+  width: 6.5rem;
+  height: 6.5rem;
+
+  border-radius: 100%;
+  border: 0.0938rem solid #FE3800;
+}
+
+#app .content .informations {
+  padding: 0 1rem;
+  padding-top: 3.25rem;
+
+  background-image: url('../assets/debounce.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 20.625rem;
+  height: 25.625rem;
+  flex-shrink: 0;
+  margin-top: 5rem;
+}
+
+#app .content .informations h1 {
+  color: #fff;
+  text-align: center;
+  font-family: 'Baloo 2';
+  font-size: 1.4375rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 1.5rem;
+
+  position: absolute;
+  top: 6.2rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#app .content .informations h1 b {
+  color: rgba(255, 255, 255, 0.8);
+  font-family: 'Baloo 2';
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+#app .content .informations .list {
+  gap: 0.8rem;
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  margin-top: 1.25rem;
+}
+
+#app .content .informations .list .item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#app .content .informations .list .item p {
+  color: rgba(255, 255, 255, 0.5);
+  text-align: right;
+  font-size: 0.8125rem;
+  font-weight: 600;
+}
+
+#app .content .informations .list .item .name {
+  gap: 0.44rem;
+  display: flex;
+  align-items: center;
+}
+
+#app .content .informations .list .item .name img {
+  width: 1.3125rem;
+  height: 1.3125rem;
+}
+
+#app .content .informations .list .item .name p {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.8125rem;
+  font-weight: 700;
+}
+
+#app .vips {
+  gap: 0.44rem;
+  display: flex;
+  margin-top: 0.5rem;
+  flex-direction: column;
+}
+
+#app .vips .vip {
+  width: 20.625rem;
+  height: 2.375rem;
+  border-radius: 0.25rem;
+  border: 1px solid #FE3800;
+  background: linear-gradient(135deg, #FE3800 0%, #FE3800 100%);
+  box-shadow: 0px 0px 10px 0px #FE3800e6;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 1rem;
+}
+
+#app .vips .vip p {
+  color: rgba(255, 255, 255, 0.9);
+  text-align: right;
+  font-size: 0.8125rem;
+  font-weight: 800;
+}
+
+#app .vips .vip .title {
+  gap: 0.44rem;
+  display: flex;
+  align-items: center;
+}
+
+#app .vips .vip .title img {
+  width: 1rem;
+  height: 1rem;
+}
+
+#app .vips .vip .title p {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+html {
+  font-size: 0.75vw;
+}

@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  user-select: none;
+}
+
+body,
+#root {
+  height: 100vh;
+  overflow: hidden;
+}
+
+html {
+  /* font-size: 1.2vh; */
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+::-webkit-scrollbar {
+  border-radius: 0.0625rem;
+  background: rgba(255, 255, 255, 0.02);
+  width: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 0.0625rem;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.background {
+  border-radius: 0.25rem;
+  border: 1px solid rgba(255, 255, 255, 0.02);
+  background: #15151A;
+}
+
+.muted-foreground {
+  border-radius: 0.25rem;
+  border: 1px solid rgba(255, 255, 255, 0.02);
+  background: #15151A;
+}
+
+.foreground {
+  border-radius: 0.25rem;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.accent {
+  border-radius: 0.1875rem;
+  background: linear-gradient(91deg, #06F 0%, #003D99 100%);
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.ghost {
+  border-radius: 0.1875rem;
+background: rgba(255, 255, 255, 0.02);
+color: rgba(255, 255, 255, 0.55);
+font-family: Montserrat;
+font-size: 0.75rem;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}

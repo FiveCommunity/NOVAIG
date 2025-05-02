@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100% !important;
+    height: 100vh !important;
+    color: #fff;
+    user-select: none;
+    overflow: hidden;
+    background-size: 100% 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: .8vw;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#registration{
+    width: 100% !important;
+    height: 100% !important;
+
+    background: radial-gradient(50% 50% at 50% 50%, #2A2A2A 0%, #1A1A1A 100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3vw;
+}
+
+
+.content_registration{
+    width: 29.53125vw;
+    height: 26.40625vw;
+    border-radius: 0.5vw;
+
+    background: #00000099;
+
+    text-align: center;
+    padding: 1vw;
+}
+
+.input_text_registration{
+    width: 100%;
+    height: 2.0833333333333335vw;
+    border: 0;
+    margin-top: .3vw;
+    border-radius: .25vw;
+    background: #1A1A1A;
+    outline: none;
+    color: #fff;
+    padding-left: 1.1458333333333335vw;
+}
+
+::placeholder{
+    color: #fff8;
+}
+
+.options_registration{
+    width: 100%;
+    display: flex;
+    width: 100%;
+    margin-top: .3vw;
+}
+
+.options_registration input{
+    width: 18.114583333333334vw;
+    height: 2.0833333333333335vw;
+    border: 0;
+    border-radius: .25vw;
+    background: #1A1A1A;
+    outline: none;
+    color: #fff;
+    padding-left: 1.1458333333333335vw;
+}
+
+.select_gender_registration{
+    width: 5vw;
+    border-radius: .25vw;
+    background: #1A1A1A;
+    margin-left: .3vw;
+    transition: all .2s ease;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+svg{
+    width: 1vw;
+}
+
+input{
+    transition: all .2s ease;
+    
+}
+
+
+.option_social{
+    width: 5vw;
+    height: 2.0833333333333335vw;
+    background: #1A1A1A;
+    margin-left: .3vw;
+    border-radius: .3vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .1s ease;
+}
+
+.select_gender_registration:hover{
+    background: #2a2a2a;
+
+}
+
+.option_social:hover{
+    background: #2a2a2a;
+}
+input:hover{
+    background: #2a2a2a;
+
+}
+
+h1{
+    font-size: 1.5vw;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+
+}
+
+.confirm{
+    width: 30%;
+    margin: auto;
+    margin-top: 1vw;
+    padding: 1vw;
+    background: #F34D96;
+    font-size: 1vw;
+}
+
+.confirm:hover{
+    background: #fd2d87;
+
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ruanjkz</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <img onclick="app.goBack(this)" class="status" draggable="false" style="cursor: pointer;" src="./assets/close.svg"
+      alt="close" status="close">
+    <div class="list"></div>
+  </div>
+  <div class="modal">
+    <p>Salvar outfit</p>
+    <div class="input">
+      <input type="text" placeholder="Nome do outfit">
+      <svg width="11" height="13" viewBox="0 0 11 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g clip-path="url(#clip0_1430_354)">
+          <path
+            d="M3.31964 0.449414L3.14286 0.8125H0.785714C0.351116 0.8125 0 1.17559 0 1.625C0 2.07441 0.351116 2.4375 0.785714 2.4375H10.2143C10.6489 2.4375 11 2.07441 11 1.625C11 1.17559 10.6489 0.8125 10.2143 0.8125H7.85714L7.68036 0.449414C7.54777 0.172656 7.27522 0 6.97813 0H4.02187C3.72478 0 3.45223 0.172656 3.31964 0.449414ZM10.2143 3.25H0.785714L1.30625 11.8574C1.34554 12.4998 1.86116 13 2.48237 13H8.51763C9.13884 13 9.65446 12.4998 9.69375 11.8574L10.2143 3.25Z"
+            fill="white" fill-opacity="0.3" />
+        </g>
+        <defs>
+          <clipPath id="clip0_1430_354">
+            <rect width="11" height="13" fill="white" />
+          </clipPath>
+        </defs>
+      </svg>
+    </div>
+    <div class="actions">
+      <button id="close">FECHAR</button>
+      <button id="save">SALVAR</button>
+    </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+
+</html>

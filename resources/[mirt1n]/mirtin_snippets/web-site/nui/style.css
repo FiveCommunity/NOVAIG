@@ -1,0 +1,86 @@
+
+div { border: 0; outline: 0; vertical-align: baseline; background: transparent; margin: 0; padding: 0; }
+:focus { outline: 0; }
+::selection { background: transparent; }
+
+@font-face {
+	font-family: Square;
+	src: url(./fonts/Square.ttf)
+}
+
+#fundao {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 40px;
+	left: 40px;
+	background-color: rgb(0, 0, 0);
+	border-radius: 0px;
+}
+
+#actionmenu {
+	position: absolute;
+	top: 25%; 
+	left: 50px;
+	height: 560px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(0, 0, 0);
+	width: 240px;
+	border-radius: 4px;
+	background-color: rgba(0, 0, 0, 0.363);
+}
+
+#botaoEsquerda {
+	background-color: rgba(0, 0, 0, 0.8);
+	width: 80px;
+	height: 80px;
+	border: none;
+	margin-left: 25px;	
+	display: absolute;
+	color: fff;
+	font-weight: 400;
+	margin-top: 10px;
+	text-align: center;
+	font-style: bold;
+	letter-spacing: 0.5px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(0, 0, 0);
+}
+
+
+#botaoEsquerda:hover {
+
+	box-shadow: 0px 0px 3px  #888888;
+	
+}
+#andar{
+	background-color: rgba(0, 0, 0, 0.61);
+	height: 70px;
+	width: 170px;
+	font-style: bold;
+	border-radius: 3px;
+	margin-left: 35px;
+	margin-top: 10px;
+}
+#numeroandar{
+	position: absolute;
+	font-family: Square;
+	color: rgb(85, 169, 247);
+	font-size: 50px;
+	top: -30px;
+	left: 102;
+}
+l {
+	width: 75%;
+	text-align: center;
+	float: left;
+}
+
+r {
+	color: rgba(255,255,255,0.5);
+	width: 25%;
+	text-align: right;
+	float: left;
+}

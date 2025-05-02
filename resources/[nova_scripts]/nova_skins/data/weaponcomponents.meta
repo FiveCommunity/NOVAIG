@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CWeaponComponentInfoBlob>
+  <Data>
+  </Data>
+  <Infos>
+    <!-- G36 MK2 -->
+    <Item type="CWeaponComponentVariantModelInfo">
+      <Name>COMPONENT_SIG_HALLOWEEN</Name>
+      <Model>w_ar_specialcarbinemk2_halloween</Model>
+      <LocName>WCT_INVALID</LocName>
+      <LocDesc>WCD_INVALID</LocDesc>
+      <AttachBone />
+      <AccuracyModifier type="NULL" />
+      <DamageModifier type="NULL" />
+      <bShownOnWheel value="false" />
+      <CreateObject value="false" />
+      <HudDamage value="0" />
+      <HudSpeed value="0" />
+      <HudCapacity value="0" />
+      <HudAccuracy value="0" />
+      <HudRange value="0" />
+      <TintIndexOverride value="0"/>
+      <ExtraComponents>
+        <Item>
+          <ComponentName>COMPONENT_SPECIALCARBINE_MK2_CLIP_01</ComponentName>
+          <ComponentModel>w_ar_specialcarbinemk2_halloween_mag1</ComponentModel>
+        </Item>
+        <Item>
+          <ComponentName>COMPONENT_SPECIALCARBINE_MK2_CLIP_02</ComponentName>
+          <ComponentModel>w_ar_specialcarbinemk2_halloween_mag2</ComponentModel>
+        </Item>
+      </ExtraComponents>
+    </Item>
+    <Item type="CWeaponComponentVariantModelInfo">
+      <Name>COMPONENT_SIG_ICE</Name>
+      <Model>w_ar_specialcarbinemk2_ice</Model>
+      <LocName>WCT_INVALID</LocName>
+      <LocDesc>WCD_INVALID</LocDesc>
+      <AttachBone />
+      <AccuracyModifier type="NULL" />
+      <DamageModifier type="NULL" />
+      <bShownOnWheel value="false" />
+      <CreateObject value="false" />
+      <HudDamage value="0" />
+      <HudSpeed value="0" />
+      <HudCapacity value="0" />
+      <HudAccuracy value="0" />
+      <HudRange value="0" />
+      <TintIndexOverride value="0"/>
+      <ExtraComponents>
+        <Item>
+          <ComponentName>COMPONENT_SPECIALCARBINE_MK2_CLIP_01</ComponentName>
+          <ComponentModel>w_ar_specialcarbinemk2_ice_mag1</ComponentModel>
+        </Item>
+        <Item>
+          <ComponentName>COMPONENT_SPECIALCARBINE_MK2_CLIP_02</ComponentName>
+          <ComponentModel>w_ar_specialcarbinemk2_ice_mag2</ComponentModel>
+        </Item>
+      </ExtraComponents>
+    </Item>
+    <Item type="CWeaponComponentVariantModelInfo">
+      <Name>COMPONENT_SIG_SAKURA</Name>
+      <Model>w_ar_specialcarbinemk2_sakura</Model>
+      <LocName>WCT_INVALID</LocName>
+      <LocDesc>WCD_INVALID</LocDesc>
+      <AttachBone />
+      <AccuracyModifier type="NULL" />
+      <DamageModifier type="NULL" />
+      <bShownOnWheel value="false" />
+      <CreateObject value="false" />
+      <HudDamage value="0" />
+      <HudSpeed value="0" />
+      <HudCapacity value="0" />
+      <HudAccuracy value="0" />
+      <HudRange value="0" />
+      <TintIndexOverride value="0"/>
+      <ExtraComponents>
+        <Item>
+          <ComponentName>COMPONENT_SPECIALCARBINE_MK2_CLIP_01</ComponentName>
+          <ComponentModel>w_ar_specialcarbinemk2_sakura_mag1</ComponentModel>
+        </Item>
+        <Item>
+          <ComponentName>COMPONENT_SPECIALCARBINE_MK2_CLIP_02</ComponentName>
+          <ComponentModel>w_ar_specialcarbinemk2_sakura_mag2</ComponentModel>
+        </Item>
+      </ExtraComponents>
+    </Item>
+
+    <!-- AK MK2 -->
+    <Item type="CWeaponComponentVariantModelInfo">
+      <Name>COMPONENT_AK74_GOLDEN</Name>
+      <Model>w_ar_assaultriflemk2_golden</Model>
+      <LocName>WCT_INVALID</LocName>
+      <LocDesc>WCD_INVALID</LocDesc>
+      <AttachBone />
+      <AccuracyModifier type="NULL" />
+      <DamageModifier type="NULL" />
+      <bShownOnWheel value="false" />
+      <CreateObject value="false" />
+      <HudDamage value="0" />
+      <HudSpeed value="0" />
+      <HudCapacity value="0" />
+      <HudAccuracy value="0" />
+      <HudRange value="0" />
+      <TintIndexOverride value="0"/>
+      <ExtraComponents>
+        <Item>
+          <ComponentName>COMPONENT_ASSAULTRIFLE_MK2_CLIP_01</ComponentName>
+          <ComponentModel>w_ar_assaultriflemk2_golden_mag1</ComponentModel>
+        </Item>
+        <Item>
+          <ComponentName>COMPONENT_ASSAULTRIFLE_MK2_CLIP_02</ComponentName>
+          <ComponentModel>w_ar_assaultriflemk2_golden_mag2</ComponentModel>
+        </Item>
+      </ExtraComponents>
+    </Item>
+    <Item type="CWeaponComponentVariantModelInfo">
+      <Name>COMPONENT_AK74_HERO</Name>
+      <Model>w_ar_assaultriflemk2_hero</Model>
+      <LocName>WCT_INVALID</LocName>
+      <LocDesc>WCD_INVALID</LocDesc>
+      <AttachBone />
+      <AccuracyModifier type="NULL" />
+      <DamageModifier type="NULL" />
+      <bShownOnWheel value="false" />
+      <CreateObject value="false" />
+      <HudDamage value="0" />
+      <HudSpeed value="0" />
+      <HudCapacity value="0" />
+      <HudAccuracy value="0" />
+      <HudRange value="0" />
+      <TintIndexOverride value="0"/>
+      <ExtraComponents>
+        <Item>
+          <ComponentName>COMPONENT_ASSAULTRIFLE_MK2_CLIP_01</ComponentName>
+          <ComponentModel>w_ar_assaultriflemk2_hero_mag1</ComponentModel>
+        </Item>
+        <Item>
+          <ComponentName>COMPONENT_ASSAULTRIFLE_MK2_CLIP_02</ComponentName>
+          <ComponentModel>w_ar_assaultriflemk2_hero_mag2</ComponentModel>
+        </Item>
+      </ExtraComponents>
+    </Item>
+
+    <!-- FIVE SEVEN -->
+    <Item type="CWeaponComponentVariantModelInfo">
+      <Name>COMPONENT_FIVE_HALLOWEEN</Name>
+      <Model>w_pi_pistolmk2_halloween</Model>
+      <LocName>WCT_INVALID</LocName>
+      <LocDesc>WCD_INVALID</LocDesc>
+      <AttachBone />
+      <AccuracyModifier type="NULL" />
+      <DamageModifier type="NULL" />
+      <bShownOnWheel value="false" />
+      <CreateObject value="false" />
+      <HudDamage value="0" />
+      <HudSpeed value="0" />
+      <HudCapacity value="0" />
+      <HudAccuracy value="0" />
+      <HudRange value="0" />
+      <TintIndexOverride value="0"/>
+      <ExtraComponents>
+        <Item>
+          <ComponentName>COMPONENT_PISTOL_MK2_CLIP_01</ComponentName>
+          <ComponentModel>w_pi_pistolmk2_halloween_mag1</ComponentModel>
+        </Item>
+        <Item>
+          <ComponentName>COMPONENT_PISTOL_MK2_CLIP_02</ComponentName>
+          <ComponentModel>w_pi_pistolmk2_halloween_mag2</ComponentModel>
+        </Item>
+      </ExtraComponents>
+    </Item>
+    <Item type="CWeaponComponentVariantModelInfo">
+      <Name>COMPONENT_FIVESEVEN_NARUTO</Name>
+      <Model>w_pi_pistolmk2_naruto</Model>
+      <LocName>WCT_INVALID</LocName>
+      <LocDesc>WCD_INVALID</LocDesc>
+      <AttachBone />
+      <AccuracyModifier type="NULL" />
+      <DamageModifier type="NULL" />
+      <bShownOnWheel value="false" />
+      <CreateObject value="false" />
+      <HudDamage value="0" />
+      <HudSpeed value="0" />
+      <HudCapacity value="0" />
+      <HudAccuracy value="0" />
+      <HudRange value="0" />
+      <TintIndexOverride value="0"/>
+      <ExtraComponents>
+        <Item>
+          <ComponentName>COMPONENT_PISTOL_MK2_CLIP_01</ComponentName>
+          <ComponentModel>w_pi_pistolmk2_naruto_mag1</ComponentModel>
+        </Item>
+        <Item>
+          <ComponentName>COMPONENT_PISTOL_MK2_CLIP_02</ComponentName>
+          <ComponentModel>w_pi_pistolmk2_naruto_mag2</ComponentModel>
+        </Item>
+      </ExtraComponents>
+    </Item>
+    <Item type="CWeaponComponentVariantModelInfo">
+      <Name>COMPONENT_FIVE_SAKURA</Name>
+      <Model>w_pi_pistolmk2_sakura</Model>
+      <LocName>WCT_INVALID</LocName>
+      <LocDesc>WCD_INVALID</LocDesc>
+      <AttachBone />
+      <AccuracyModifier type="NULL" />
+      <DamageModifier type="NULL" />
+      <bShownOnWheel value="false" />
+      <CreateObject value="false" />
+      <HudDamage value="0" />
+      <HudSpeed value="0" />
+      <HudCapacity value="0" />
+      <HudAccuracy value="0" />
+      <HudRange value="0" />
+      <TintIndexOverride value="0"/>
+      <ExtraComponents>
+        <Item>
+          <ComponentName>COMPONENT_PISTOL_MK2_CLIP_01</ComponentName>
+          <ComponentModel>w_pi_pistolmk2_sakura_mag1</ComponentModel>
+        </Item>
+        <Item>
+          <ComponentName>COMPONENT_PISTOL_MK2_CLIP_02</ComponentName>
+          <ComponentModel>w_pi_pistolmk2_sakura_mag2</ComponentModel>
+        </Item>
+      </ExtraComponents>
+    </Item>
+
+    <!-- COMBAT PISTOL -->
+    <Item type="CWeaponComponentVariantModelInfo">
+      <Name>COMPONENT_GLOCK_HERO</Name>
+      <Model>w_pi_combatpistol_hero</Model>
+      <LocName>WCT_INVALID</LocName>
+      <LocDesc>WCD_INVALID</LocDesc>
+      <AttachBone />
+      <AccuracyModifier type="NULL" />
+      <DamageModifier type="NULL" />
+      <bShownOnWheel value="false" />
+      <CreateObject value="false" />
+      <HudDamage value="0" />
+      <HudSpeed value="0" />
+      <HudCapacity value="0" />
+      <HudAccuracy value="0" />
+      <HudRange value="0" />
+      <TintIndexOverride value="0"/>
+      <ExtraComponents>
+        <Item>
+          <ComponentName>COMPONENT_COMBATPISTOL_CLIP_01</ComponentName>
+          <ComponentModel>w_pi_combatpistol_hero_mag1</ComponentModel>
+        </Item>
+        <Item>
+          <ComponentName>COMPONENT_COMBATPISTOL_CLIP_02</ComponentName>
+          <ComponentModel>w_pi_combatpistol_hero_mag2</ComponentModel>
+        </Item>
+      </ExtraComponents>
+    </Item>
+    <Item type="CWeaponComponentVariantModelInfo">
+      <Name>COMPONENT_GLOCK_SAKURA</Name>
+      <Model>w_pi_combatpistol_sakura</Model>
+      <LocName>WCT_INVALID</LocName>
+      <LocDesc>WCD_INVALID</LocDesc>
+      <AttachBone />
+      <AccuracyModifier type="NULL" />
+      <DamageModifier type="NULL" />
+      <bShownOnWheel value="false" />
+      <CreateObject value="false" />
+      <HudDamage value="0" />
+      <HudSpeed value="0" />
+      <HudCapacity value="0" />
+      <HudAccuracy value="0" />
+      <HudRange value="0" />
+      <TintIndexOverride value="0"/>
+      <ExtraComponents>
+        <Item>
+          <ComponentName>COMPONENT_COMBATPISTOL_CLIP_01</ComponentName>
+          <ComponentModel>w_pi_combatpistol_sakura_mag1</ComponentModel>
+        </Item>
+        <Item>
+          <ComponentName>COMPONENT_COMBATPISTOL_CLIP_02</ComponentName>
+          <ComponentModel>w_pi_combatpistol_sakura_mag2</ComponentModel>
+        </Item>
+      </ExtraComponents>
+    </Item>
+
+    <!-- SMG MK2 -->
+    <Item type="CWeaponComponentVariantModelInfo">
+      <Name>COMPONENT_SMGMK2_HALLOWEEN</Name>
+      <Model>w_sb_smgmk2_halloween</Model>
+      <LocName>WCT_INVALID</LocName>
+      <LocDesc>WCD_INVALID</LocDesc>
+      <AttachBone />
+      <AccuracyModifier type="NULL" />
+      <DamageModifier type="NULL" />
+      <bShownOnWheel value="false" />
+      <CreateObject value="false" />
+      <HudDamage value="0" />
+      <HudSpeed value="0" />
+      <HudCapacity value="0" />
+      <HudAccuracy value="0" />
+      <HudRange value="0" />
+      <TintIndexOverride value="0"/>
+      <ExtraComponents>
+        <Item>
+          <ComponentName>COMPONENT_SMGMK2_CLIP_01</ComponentName>
+          <ComponentModel>w_sb_smgmk2_halloween_mag1</ComponentModel>
+        </Item>
+        <Item>
+          <ComponentName>COMPONENT_SMGMK2_CLIP_02</ComponentName>
+          <ComponentModel>w_sb_smgmk2_halloween_mag2</ComponentModel>
+        </Item>
+      </ExtraComponents>
+    </Item>
+    <Item type="CWeaponComponentVariantModelInfo">
+      <Name>COMPONENT_SMGMK2_SAKURA</Name>
+      <Model>w_sb_smgmk2_sakura</Model>
+      <LocName>WCT_INVALID</LocName>
+      <LocDesc>WCD_INVALID</LocDesc>
+      <AttachBone />
+      <AccuracyModifier type="NULL" />
+      <DamageModifier type="NULL" />
+      <bShownOnWheel value="false" />
+      <CreateObject value="false" />
+      <HudDamage value="0" />
+      <HudSpeed value="0" />
+      <HudCapacity value="0" />
+      <HudAccuracy value="0" />
+      <HudRange value="0" />
+      <TintIndexOverride value="0"/>
+      <ExtraComponents>
+        <Item>
+          <ComponentName>COMPONENT_SMGMK2_CLIP_01</ComponentName>
+          <ComponentModel>w_sb_smgmk2_sakura_mag1</ComponentModel>
+        </Item>
+        <Item>
+          <ComponentName>COMPONENT_SMGMK2_CLIP_02</ComponentName>
+          <ComponentModel>w_sb_smgmk2_sakura_mag2</ComponentModel>
+        </Item>
+      </ExtraComponents>
+    </Item>
+
+    <!-- COMBAT PDW -->
+    <Item type="CWeaponComponentVariantModelInfo">
+      <Name>COMPONENT_COMBATPDW_HERO</Name>
+      <Model>w_sb_pdw_hero_hero</Model>
+      <LocName>WCT_INVALID</LocName>
+      <LocDesc>WCD_INVALID</LocDesc>
+      <AttachBone />
+      <AccuracyModifier type="NULL" />
+      <DamageModifier type="NULL" />
+      <bShownOnWheel value="false" />
+      <CreateObject value="false" />
+      <HudDamage value="0" />
+      <HudSpeed value="0" />
+      <HudCapacity value="0" />
+      <HudAccuracy value="0" />
+      <HudRange value="0" />
+      <TintIndexOverride value="0"/>
+      <ExtraComponents>
+        <Item>
+          <ComponentName>COMPONENT_COMBATPDW_CLIP_01</ComponentName>
+          <ComponentModel>w_sb_pdw_hero_hero_mag1</ComponentModel>
+        </Item>
+        <Item>
+          <ComponentName>COMPONENT_COMBATPDW_CLIP_02</ComponentName>
+          <ComponentModel>w_sb_pdw_hero_hero_mag2</ComponentModel>
+        </Item>
+      </ExtraComponents>
+    </Item>
+
+    <!-- Dagger -->
+    <Item type="CWeaponComponentVariantModelInfo">
+      <Name>COMPONENT_DAGGER_HERO</Name>
+      <Model>w_me_dagger_hero</Model>
+      <LocName>WCT_INVALID</LocName>
+      <LocDesc>WCD_INVALID</LocDesc>
+      <AttachBone />
+      <AccuracyModifier type="NULL" />
+      <DamageModifier type="NULL" />
+      <bShownOnWheel value="false" />
+      <CreateObject value="false" />
+      <HudDamage value="0" />
+      <HudSpeed value="0" />
+      <HudCapacity value="0" />
+      <HudAccuracy value="0" />
+      <HudRange value="0" />
+      <TintIndexOverride value="0"/>
+    </Item>
+
+    <!-- Knife -->
+    <Item type="CWeaponComponentVariantModelInfo">
+      <Name>COMPONENT_KNIFE_SAKURA</Name>
+      <Model>w_me_knife_01_sakura</Model>
+      <LocName>WCT_INVALID</LocName>
+      <LocDesc>WCD_INVALID</LocDesc>
+      <AttachBone />
+      <AccuracyModifier type="NULL" />
+      <DamageModifier type="NULL" />
+      <bShownOnWheel value="false" />
+      <CreateObject value="false" />
+      <HudDamage value="0" />
+      <HudSpeed value="0" />
+      <HudCapacity value="0" />
+      <HudAccuracy value="0" />
+      <HudRange value="0" />
+      <TintIndexOverride value="0"/>
+    </Item>
+
+    <!-- Hatchet -->
+    <Item type="CWeaponComponentVariantModelInfo">
+      <Name>COMPONENT_HATCHET_ASSIS</Name>
+      <Model>w_me_hatchet_assis</Model>
+      <LocName>WCT_INVALID</LocName>
+      <LocDesc>WCD_INVALID</LocDesc>
+      <AttachBone />
+      <AccuracyModifier type="NULL" />
+      <DamageModifier type="NULL" />
+      <bShownOnWheel value="false" />
+      <CreateObject value="false" />
+      <HudDamage value="0" />
+      <HudSpeed value="0" />
+      <HudCapacity value="0" />
+      <HudAccuracy value="0" />
+      <HudRange value="0" />
+      <TintIndexOverride value="0"/>
+    </Item>
+  </Infos>
+    <Item type="CWeaponComponentVariantModelInfo">
+      <Name>COMPONENT_HATCHET_HALLOWEEN</Name>
+      <Model>w_me_hatchet_halloween</Model>
+      <LocName>WCT_INVALID</LocName>
+      <LocDesc>WCD_INVALID</LocDesc>
+      <AttachBone />
+      <AccuracyModifier type="NULL" />
+      <DamageModifier type="NULL" />
+      <bShownOnWheel value="false" />
+      <CreateObject value="false" />
+      <HudDamage value="0" />
+      <HudSpeed value="0" />
+      <HudCapacity value="0" />
+      <HudAccuracy value="0" />
+      <HudRange value="0" />
+      <TintIndexOverride value="0"/>
+    </Item>
+  </Infos>
+  <InfoBlobName>DLC - FLEXSTORE</InfoBlobName>
+</CWeaponComponentInfoBlob>
