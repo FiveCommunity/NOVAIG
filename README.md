@@ -1,92 +1,110 @@
-# 🛠️ Five Community - Base Oficial
 
-Seja bem-vindo à **base desenvolvida com excelência** pela equipe da **Five Community**.  
-Este projeto foi criado com dedicação para oferecer uma estrutura sólida e eficiente para servidores FiveM.
+<p align="center">
+  <img src="https://r2.fivemanage.com/wpsWGUx1KTPLmXgc0cCnU/1.png" alt="Five Community Logo" width="300"/>
+</p>
 
----
+<h1 align="center">Five Community - Base Oficial</h1>
 
-## 👤 Desenvolvedores Responsáveis
-
-- **BKVINI.OFC1**
-- **VOLPHZ**
-
-> **Orgulhosamente desenvolvida pela [Five Community](https://discord.gg/fivecommunity)**
+<p align="center">
+  Framework vRPex otimizado • Suporte até 2.000 players • Base profissional para servidores RP<br/>
+  <a href="https://discord.gg/fivecommunity"><strong>🌐 Entre em nosso Discord</strong></a>
+</p>
 
 ---
 
-## 🌐 Comunidade
+## 👥 Desenvolvedores
 
-📌 Junte-se ao nosso servidor no Discord para suporte, atualizações e novidades:  
-🔗 **[https://discord.gg/fivecommunity](https://discord.gg/fivecommunity)**
+Esta base foi desenvolvida com dedicação pela equipe da **Five Community**.
 
----
+- 👤 [Volphz](https://github.com/volphzz)  
+- 👤 [BkVini](https://github.com/ViniModder)
 
-## 📣 Importante
-
-> **📢 Caso deseje repostar ou compartilhar esta base:**  
-> Por favor, **mantenha os créditos dos criadores.**  
-> Isso é fundamental para que possamos continuar contribuindo com a comunidade, oferecendo projetos gratuitos e de qualidade.  
-> Seu apoio faz a diferença! 💙
+> **Repostou? Por favor, mantenha nossos créditos. Isso nos ajuda a continuar trazendo conteúdo gratuito e de qualidade!**
 
 ---
 
 ## ⚙️ Framework — Baseado em vRPex (vRP Modificado)
 
-Esta base utiliza o **vRPex**, uma versão **profundamente otimizada e modificada** do framework original **vRP**, trazendo mais **estabilidade**, **desempenho** e **flexibilidade** para servidores FiveM de grande porte.
+A base utiliza o **vRPex**, uma versão **modificada e altamente otimizada** do framework original **vRP**.
 
 ### 🚀 Desempenho
 
-- ✅ Estrutura robusta e otimizada  
-- ✅ Excelente gerenciamento de recursos  
-- ✅ Suporte para até **2.000 jogadores simultâneos**  
-- ✅ Alta compatibilidade com scripts personalizados  
-- ✅ Ideal para servidores RP de médio a grande porte
+- ✅ Suporte até **2.000 jogadores**
+- ✅ Estrutura robusta e otimizada
+- ✅ Integração com sistemas de autenticação
+- ✅ Excelente estabilidade e performance
 
 ### 🔒 Estabilidade
 
-- Sistema modular e escalável  
-- Redução significativa de travamentos e gargalos  
-- Integração facilitada com bancos de dados (MySQL, MariaDB)  
-- Processamento assíncrono de eventos e dados  
-- Monitoramento e controle de performance por resource
+- Código modular e assíncrono
+- Integração nativa com MariaDB
+- Suporte completo a scripts externos
+- Ideal para servidores de médio e grande porte
 
-> ⚠️ O **vRPex** é uma versão **fortemente modificada** do **vRP original**.  
-> Todas as melhorias foram aplicadas visando **melhor performance**, **segurança** e **suporte a grandes comunidades**.
+> ⚠️ Esta versão foi modificada exclusivamente pela Five Community para garantir **maior estabilidade e escalabilidade**.
 
 ---
 
 ## 🧰 Área de Instalação
 
-Todas as nossas bases são compatíveis e **requerem o uso do banco de dados MariaDB**.  
-Para instalar e configurar corretamente, siga o passo a passo abaixo ou acesse nosso site com tutoriais detalhados:
+Todas as nossas bases requerem o uso do banco de dados **MariaDB**.
 
-🔗 **Tutorial completo e básico:** [https://www.fivetutors.site/](https://www.fivetutors.site/)
+📘 **Tutorial completo:** [https://www.fivetutors.site](https://www.fivetutors.site)
+
+### 📦 Passos para Instalação
+
+#### 1️⃣ Instale o MariaDB
+Não defina senha durante a instalação para facilitar a configuração inicial.
+
+#### 2️⃣ Instale o Apache
+Verifique se está ativo acessando: `http://localhost`
+
+#### 3️⃣ Instale o HeidiSQL
+Conecte-se como `root` sem senha para acessar o banco.
+
+#### 4️⃣ Gere sua chave CFX
+- Acesse: [https://keymaster.fivem.net/register](https://keymaster.fivem.net/register)
+- Gere uma nova chave e adicione no `server.cfg`:
+```cfg
+sv_licenseKey "SUA_CHAVE_CFX"
+```
+
+#### 5️⃣ Baixe os Artifacts do FiveM
+Utilize a versão mais recente.
+
+#### 6️⃣ Configure seu servidor
+Edite o `server.cfg` com slots, nome e configurações.
+
+#### 7️⃣ Importe o banco de dados
+Use o HeidiSQL para importar o `.sql` incluído na base.
+
+#### 8️⃣ Inicie o servidor
+Execute o `FXServer.exe` e acompanhe o console.
 
 ---
 
-### 📦 Processo de Configuração
+## 📣 Créditos e Distribuição
 
-#### 1️⃣ Instale o MariaDB
-Siga o tutorial em vídeo no site acima. **Não defina senha** durante a instalação para facilitar a configuração inicial.
+> Esta base foi desenvolvida com foco em performance, escalabilidade e segurança.  
+> **Se for redistribuir, mantenha os créditos!**  
+> Isso nos ajuda a continuar apoiando a comunidade com projetos gratuitos e de qualidade.
 
-#### 2️⃣ Instale o Apache
-Instale o Apache conforme mostrado no segundo vídeo.  
-Verifique o funcionamento acessando: [http://localhost](http://localhost)
+---
 
-#### 3️⃣ Instale o HeidiSQL
-Conecte-se ao MariaDB local usando o usuário `root` (sem senha).  
-Essa ferramenta facilita a administração do banco de dados.
+## 🌐 Comunidade e Suporte
 
-#### 4️⃣ Gere sua Chave CFX
-Para exibir seu servidor na lista pública do FiveM:
+- 🧵 Discord: [https://discord.gg/fivecommunity](https://discord.gg/fivecommunity)  
+- 💡 Dúvidas, tutoriais e guias no nosso site: [https://www.fivetutors.site](https://www.fivetutors.site)
 
-- Acesse: [https://keymaster.fivem.net/register](https://keymaster.fivem.net/register)  
-- Faça login com sua conta FiveM  
-- Clique em **"Register new server"**  
-- Preencha os dados e aceite os termos  
-- Clique em **"Generate"** e salve sua chave
+---
 
-Adicione no `server.cfg` com:
+## 📄 Licença
 
-```cfg
-sv_licenseKey "SUA_CHAVE_CFX"
+Distribuído gratuitamente para fins educacionais e comunitários.  
+**Não é permitido remover os créditos dos autores.**
+
+---
+
+<p align="center">
+  🚀 <strong>Five Community</strong> — Fortalecendo a criação no FiveM com responsabilidade e inovação.
+</p>
