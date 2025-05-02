@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lua Obfuscator</title>
+    <style>
+      *{margin:0;padding:0;box-sizing:border-box;outline:none;border:none;text-decoration:none}body{display:flex;font-family:Geneva,Verdana,sans-serif;color:#fff;height:100vh;background-color:#333;justify-content:center;align-items:center}.navbar{display:flex;height:5rem;justify-content:space-between;align-items:center;padding:1.4rem 5%;background-color:rgba(68,68,68,.3);border-bottom:3px solid rgba(34,34,34,.5);position:fixed;top:0;left:0;right:0;z-index:9999;box-shadow:0 0 20px #252525}.logo span{color:#ff8f10;transition:.2s ease-in-out}.logo{display:flex;transition:.2s ease-in-out;animation:idle 3s ease-in-out infinite alternate}.logo:hover{color:#ff8f10;transition:.2s ease-in-out}.logo:hover span{color:#fff;transition:.2s ease-in-out}.nav a{color:#fff;display:inline-block;font-size:1rem;margin:0 1rem;transition:.2s ease-in-out;transform:scale(.9)}.nav a:hover{color:rgba(255,255,255,.7);transform:scale(1.1);transition:.2s ease-in-out}.profile{border-radius:20px;width:2.5rem;transition:.2s cubic-bezier(.175,.885,.32,1.275);height:2.5rem;background-image:url(./xeerazz.jpg);background-size:cover;background-repeat:no-repeat;box-shadow:0 0 12px #222}.profile:hover{border-radius:13px;border:1.5px solid #fff;transform:scale(1.5)}.profile:active{transform:scale(1.25)}.card{display:block;width:100%;position:relative;background-color:rgba(68,68,68,.5);border:2px solid rgba(255,255,255,.1);border-radius:10px;box-shadow:0 0 42px #222;animation:popup 1s cubic-bezier(.175,.885,.32,1.275) 1 normal forwards}.card-header{display:flex;padding:1rem;justify-content:center;align-items:center;border-bottom:2px solid rgba(255,255,255,.5)}.card-header h3{color:#fff;transition:.5s}.card-header h3:hover{color:#ff8f10;transition:.5s}.card-body{padding:1rem}
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <h1 class="logo"><span>bkvini.ofc1</span>scator</h1>
+      <div class="nav">
+        <a href="#"><div class="t" style="--order: 2">Obfuscator</div></a>
+      </div>
+      <div class="account" style="--order: 4">
+        <div class="profile"></div>
+      </div>
+    </nav>
+    <form id="form">
+      <div class="card">
+        <div class="card-header">
+          <h3>Obfuscator</h3>
+        </div>
+        <div class="card-body">
+          <div class="filescript">
+            <h3>Upload Your File Here!</h3>
+            <input type="file" id="file" />
+            <label for="file">Select Script</label>
+            <div id="num-of-files">No File Choosen</div>
+            <h5>Only receive .lua or .txt file!</h5>
+          </div>
+          <div class="inputBox">
+            <input type="text" required id="key" />
+            <span>Encrypt Key</span>
+          </div>
+          <h5>For encrypt and decrypt script.</h5>
+          <button type="submit" id="obfuscate">
+            <span>Obfuscate</span><i></i>
+          </button>
+        </div>
+      </div>
+    </form>
+    <script>
+      let rK="",l=128,k=0,a="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz",aT=[];for(let i=0;i<a.length;i++)aT[i]=a[i];let r1="",r2="",r3="",r4="",r5="",r6="";for(let i=0;i<l;i++)r1+=aT[Math.floor(Math.random()*aT.length)],r2+=aT[Math.floor(Math.random()*aT.length)],r3+=aT[Math.floor(Math.random()*aT.length)],r4+=aT[Math.floor(Math.random()*aT.length)],r5+=aT[Math.floor(Math.random()*aT.length)],r6+=aT[Math.floor(Math.random()*aT.length)];const xE=(s,k)=>{const t=[];let i=0;for(let j=0;j<s.length;j++){let b=s.charCodeAt(j)+k.charCodeAt(i);i++,t.push(b),i==k.length&&(i=0)}return t},xE2=(s,k)=>{let t=[];for(let j=0;j<s.length;j++){k+=1;let b=s.charCodeAt(j)+k.charCodeAt(k);t.push(b),k==k.length&&(k=0)}return k=0,t};const b64=btoa(document.documentElement.outerHTML);console.log(b64);
+    </script>
+  </body>
+</html>
